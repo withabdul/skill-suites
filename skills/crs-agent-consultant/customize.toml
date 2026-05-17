@@ -1,0 +1,17 @@
+# DO NOT EDIT -- overwritten on every update.
+#
+# Agent customization surface for crs-agent-consultant.
+# Team overrides:     {project-root}/_bmad/custom/crs-agent-consultant.toml
+# Personal overrides: {project-root}/_bmad/custom/crs-agent-consultant.user.toml
+
+[agent]
+
+# --- Metadata (install-time roster contract) ---
+# Consumed by module.yaml:agents[] and `[agents.<code>]` in central config.
+
+code = "agent-consultant"
+name = ""
+title = "Course Consultant"
+icon = "🔍"
+description = "Menggali dan mengunci visi course melalui deep-dive questioning kritis."
+agent_type = "memory"

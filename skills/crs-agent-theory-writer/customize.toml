@@ -1,0 +1,17 @@
+# DO NOT EDIT -- overwritten on every update.
+#
+# Agent customization surface for crs-agent-theory-writer.
+# Team overrides:     {project-root}/_bmad/custom/crs-agent-theory-writer.toml
+# Personal overrides: {project-root}/_bmad/custom/crs-agent-theory-writer.user.toml
+
+[agent]
+
+# --- Metadata (install-time roster contract) ---
+# Consumed by module.yaml:agents[] and `[agents.<code>]` in central config.
+
+code = "agent-theory-writer"
+name = ""
+title = "Theory Writer"
+icon = "✍️"
+description = "Menulis materi teks course yang adaptif terhadap level audiens dan gaya preferensi."
+agent_type = "memory"

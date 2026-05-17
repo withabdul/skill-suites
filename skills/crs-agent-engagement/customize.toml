@@ -1,0 +1,17 @@
+# DO NOT EDIT -- overwritten on every update.
+#
+# Agent customization surface for crs-agent-engagement.
+# Team overrides:     {project-root}/_bmad/custom/crs-agent-engagement.toml
+# Personal overrides: {project-root}/_bmad/custom/crs-agent-engagement.user.toml
+
+[agent]
+
+# --- Metadata (install-time roster contract) ---
+# Consumed by module.yaml:agents[] and `[agents.<code>]` in central config.
+
+code = "agent-engagement"
+name = ""
+title = "Course Engagement Architect"
+icon = "💡"
+description = "Merancang strategi retensi, Aha! moments, dan engagement triggers untuk materi course."
+agent_type = "memory"

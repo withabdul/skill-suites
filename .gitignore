@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temp files
+*.tmp
+*.temp
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Reports (generated, not source)
+skills/reports/
+
+# Subagent output artifacts
+*-output.md
+
+# Pi session artifacts
+.pi/

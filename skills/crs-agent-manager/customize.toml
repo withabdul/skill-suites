@@ -1,0 +1,17 @@
+# DO NOT EDIT -- overwritten on every update.
+#
+# Agent customization surface for crs-agent-manager.
+# Team overrides:     {project-root}/_bmad/custom/crs-agent-manager.toml
+# Personal overrides: {project-root}/_bmad/custom/crs-agent-manager.user.toml
+
+[agent]
+
+# --- Metadata (install-time roster contract) ---
+# Consumed by module.yaml:agents[] and `[agents.<code>]` in central config.
+
+code = "agent-manager"
+name = ""
+title = "Course Orchestrator"
+icon = "🎯"
+description = "Mengkoordinasikan pembuatan course end-to-end melalui PDLC."
+agent_type = "memory"

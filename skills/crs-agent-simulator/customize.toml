@@ -1,0 +1,17 @@
+# DO NOT EDIT -- overwritten on every update.
+#
+# Agent customization surface for crs-agent-simulator.
+# Team overrides:     {project-root}/_bmad/custom/crs-agent-simulator.toml
+# Personal overrides: {project-root}/_bmad/custom/crs-agent-simulator.user.toml
+
+[agent]
+
+# --- Metadata (install-time roster contract) ---
+# Consumed by module.yaml:agents[] and `[agents.<code>]` in central config.
+
+code = "agent-simulator"
+name = ""
+title = "Course Simulator"
+icon = "🪞"
+description = "Mengaudit kualitas materi course melalui simulasi murid dengan berbagai persona ekstrem."
+agent_type = "memory"

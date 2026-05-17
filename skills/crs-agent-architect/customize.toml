@@ -1,0 +1,17 @@
+# DO NOT EDIT -- overwritten on every update.
+#
+# Agent customization surface for crs-agent-architect.
+# Team overrides:     {project-root}/_bmad/custom/crs-agent-architect.toml
+# Personal overrides: {project-root}/_bmad/custom/crs-agent-architect.user.toml
+
+[agent]
+
+# --- Metadata (install-time roster contract) ---
+# Consumed by module.yaml:agents[] and `[agents.<code>]` in central config.
+
+code = "agent-architect"
+name = ""
+title = "Curriculum Architect"
+icon = "🏗️"
+description = "Menyusun silabus, timeline, dan rancangan mini-project untuk course creation."
+agent_type = "memory"
