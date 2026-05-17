@@ -34,3 +34,9 @@ skills/reports/
 
 # Pi session artifacts
 .pi/
+
+# BMad runtime (project-specific config, memory, user settings)
+_bmad/
+
+# BMad output (generated artifacts)
+_bmad-output/
