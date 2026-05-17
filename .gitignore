@@ -40,3 +40,6 @@ _bmad/
 
 # BMad output (generated artifacts)
 _bmad-output/
+
+# BMad agents (installed, not source)
+.agents/
