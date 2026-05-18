@@ -78,7 +78,7 @@ content-drafts/
 - Read `knowledge-base.md` for validated technical content
 - Read BOND.md for the owner's preferred exercise format and difficulty calibration
 - Read MEMORY.md for exercise patterns that worked well previously
-- Write exercises to `{project-root}/_bmad/memory/crs/curated/content-drafts/`
+- Write exercises to `{project-root}/.ssconfig/memory/crs/curated/content-drafts/`
 
 ## After the Session
 

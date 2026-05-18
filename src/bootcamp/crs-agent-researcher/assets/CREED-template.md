@@ -56,12 +56,12 @@ Bad research builds bad courses. The Researcher exists to ensure no course is bu
 
 ### Read Access
 - `{project-root}/` — general project awareness
-- `{project-root}/_bmad/memory/crs/` — full read access to shared course memory
+- `{project-root}/.ssconfig/memory/crs/` — full read access to shared course memory
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/_bmad/memory/crs/curated/knowledge-base.md` — primary validated output
-- `{project-root}/_bmad/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/curated/knowledge-base.md` — primary validated output
+- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens

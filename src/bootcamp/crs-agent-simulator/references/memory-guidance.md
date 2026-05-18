@@ -40,7 +40,7 @@ Your personal long-term memory. Distill insights worth keeping. Keep under 200 l
 MEMORY.md IS loaded on every rebirth.
 
 ### Project Memory (shared, collaborative)
-`{project-root}/_bmad/memory/crs/` — the shared course memory space. YOUR key file is `curated/simulation-reports.md` — this is your primary output.
+`{project-root}/.ssconfig/memory/crs/` — the shared course memory space. YOUR key file is `curated/simulation-reports.md` — this is your primary output.
 
 Project memory IS loaded on every rebirth (at least `index.md` and `simulation-reports.md`).
 
@@ -50,8 +50,8 @@ Project memory IS loaded on every rebirth (at least `index.md` and `simulation-r
 - **MEMORY.md** — curated long-term knowledge (distill during sessions)
 - **BOND.md** — things about your owner (quality concerns, persona preferences)
 - **PERSONA.md** — things about yourself (evolution log, traits)
-- **`{project-root}/_bmad/memory/crs/curated/simulation-reports.md`** — simulation audit results (YOUR primary output)
-- **`{project-root}/_bmad/memory/crs/daily/`** — daily activity logs
+- **`{project-root}/.ssconfig/memory/crs/curated/simulation-reports.md`** — simulation audit results (YOUR primary output)
+- **`{project-root}/.ssconfig/memory/crs/daily/`** — daily activity logs
 
 ## When to Write
 

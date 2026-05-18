@@ -42,7 +42,7 @@ Modul ini menggunakan pola **Orchestrator with Micro-Specialized Agents** (8+1).
 
 ### Memory Architecture
 
-Pola yang digunakan adalah **Single Shared Memory (Daily + Curated)** di lokasi `{project-root}/_bmad/memory/crs/`.
+Pola yang digunakan adalah **Single Shared Memory (Daily + Curated)** di lokasi `{project-root}/.ssconfig/memory/crs/`.
 
 **Structure:**
 - `index.md`: Ringkasan status course saat ini, modul yang sudah selesai, dan target audiens.

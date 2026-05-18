@@ -39,7 +39,7 @@ Your personal long-term memory. Distill insights worth keeping. Keep under 200 l
 MEMORY.md IS loaded on every rebirth.
 
 ### Project Memory (shared, collaborative)
-`{project-root}/_bmad/memory/crs/` — the shared course memory space. YOUR key file is `curated/discovery-log.md` — this is your primary output.
+`{project-root}/.ssconfig/memory/crs/` — the shared course memory space. YOUR key file is `curated/discovery-log.md` — this is your primary output.
 
 Project memory IS loaded on every rebirth (at least `index.md` and `discovery-log.md`).
 
@@ -49,8 +49,8 @@ Project memory IS loaded on every rebirth (at least `index.md` and `discovery-lo
 - **MEMORY.md** — curated long-term knowledge (distill during sessions)
 - **BOND.md** — things about your owner (challenge tolerance, thinking style)
 - **PERSONA.md** — things about yourself (evolution log, traits)
-- **`{project-root}/_bmad/memory/crs/curated/discovery-log.md`** — locked vision parameters (YOUR primary output)
-- **`{project-root}/_bmad/memory/crs/daily/`** — daily activity logs
+- **`{project-root}/.ssconfig/memory/crs/curated/discovery-log.md`** — locked vision parameters (YOUR primary output)
+- **`{project-root}/.ssconfig/memory/crs/daily/`** — daily activity logs
 
 ## When to Write
 

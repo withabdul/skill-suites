@@ -49,7 +49,7 @@ For Advanced-level content:
 - Read `curriculum-design.md` for module position and prerequisites
 - Read `knowledge-base.md` for technical accuracy
 - Read BOND.md for owner's tone and style preferences
-- Write drafts to `{project-root}/_bmad/memory/crs/curated/content-drafts/`
+- Write drafts to `{project-root}/.ssconfig/memory/crs/curated/content-drafts/`
 
 ## After the Session
 

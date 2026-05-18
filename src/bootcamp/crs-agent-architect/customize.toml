@@ -1,8 +1,8 @@
 # DO NOT EDIT -- overwritten on every update.
 #
 # Agent customization surface for crs-agent-architect.
-# Team overrides:     {project-root}/_bmad/custom/crs-agent-architect.toml
-# Personal overrides: {project-root}/_bmad/custom/crs-agent-architect.user.toml
+# Team overrides:     {project-root}/.ssconfig/custom/crs-agent-architect.toml
+# Personal overrides: {project-root}/.ssconfig/custom/crs-agent-architect.user.toml
 
 [agent]
 

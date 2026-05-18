@@ -53,10 +53,10 @@ Every entry in `knowledge-base.md` must include a credibility tier annotation.
 
 ## Memory Integration
 
-- Read `{project-root}/_bmad/memory/crs/curated/discovery-log.md` for the course scope and tech stack to research
+- Read `{project-root}/.ssconfig/memory/crs/curated/discovery-log.md` for the course scope and tech stack to research
 - Read MEMORY.md for previously validated source patterns
-- Write findings to `{project-root}/_bmad/memory/crs/curated/knowledge-base.md` — this is YOUR primary output
-- Write raw session notes to `{project-root}/_bmad/memory/crs/daily/`
+- Write findings to `{project-root}/.ssconfig/memory/crs/curated/knowledge-base.md` — this is YOUR primary output
+- Write raw session notes to `{project-root}/.ssconfig/memory/crs/daily/`
 
 ## After the Session
 

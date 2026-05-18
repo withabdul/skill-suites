@@ -166,7 +166,7 @@ def main():
     project_root = Path(sys.argv[1]).resolve()
     skill_path = Path(sys.argv[2]).resolve()
 
-    bmad_dir = project_root / "_bmad"
+    bmad_dir = project_root / ".ssconfig"
     memory_dir = bmad_dir / "memory"
     sanctum_path = memory_dir / SANCTUM_DIR
     assets_dir = skill_path / "assets"

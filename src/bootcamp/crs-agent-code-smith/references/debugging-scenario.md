@@ -80,7 +80,7 @@ content-drafts/
 - Read `knowledge-base.md` for technical accuracy
 - Read BOND.md for the owner's debugging experience level and preferences
 - Read MEMORY.md for which debugging scenarios taught well and which fell flat
-- Write scenarios to `{project-root}/_bmad/memory/crs/curated/content-drafts/`
+- Write scenarios to `{project-root}/.ssconfig/memory/crs/curated/content-drafts/`
 
 ## After the Session
 

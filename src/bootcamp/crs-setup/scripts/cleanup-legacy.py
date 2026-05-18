@@ -3,13 +3,13 @@
 # requires-python = ">=3.9"
 # dependencies = []
 # ///
-"""Remove legacy module directories from _bmad/ after config migration.
+"""Remove legacy module directories from .ssconfig/ after config migration.
 
 After merge-config.py and merge-help-csv.py have migrated config data and
 deleted individual legacy files, this script removes the now-redundant
 directory trees. These directories contain skill files that are already
 installed at .claude/skills/ (or equivalent) — only the config files at
-_bmad/ root need to persist.
+.ssconfig/ root need to persist.
 
 When --skills-dir is provided, the script verifies that every skill found
 in the legacy directories exists at the installed location before removing
@@ -27,12 +27,12 @@ from pathlib import Path
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Remove legacy module directories from _bmad/ after config migration."
+        description="Remove legacy module directories from .ssconfig/ after config migration."
     )
     parser.add_argument(
         "--bmad-dir",
         required=True,
-        help="Path to the _bmad/ directory",
+        help="Path to the .ssconfig/ directory",
     )
     parser.add_argument(
         "--module-code",
@@ -43,7 +43,7 @@ def parse_args():
         "--also-remove",
         action="append",
         default=[],
-        help="Additional directory names under _bmad/ to remove (repeatable)",
+        help="Additional directory names under .ssconfig/ to remove (repeatable)",
     )
     parser.add_argument(
         "--skills-dir",

@@ -72,10 +72,10 @@ Document your findings in `knowledge-base.md` using this structure:
 
 ## Memory Integration
 
-- Read `{project-root}/_bmad/memory/crs/curated/discovery-log.md` for the target audience definition
+- Read `{project-root}/.ssconfig/memory/crs/curated/discovery-log.md` for the target audience definition
 - Read MEMORY.md for audience patterns from past research
-- Write audience findings to `{project-root}/_bmad/memory/crs/curated/knowledge-base.md`
-- Write raw session notes to `{project-root}/_bmad/memory/crs/daily/`
+- Write audience findings to `{project-root}/.ssconfig/memory/crs/curated/knowledge-base.md`
+- Write raw session notes to `{project-root}/.ssconfig/memory/crs/daily/`
 
 ## After the Session
 

@@ -36,10 +36,10 @@ skills/reports/
 .pi/
 
 # BMad runtime (project-specific config, memory, user settings)
-_bmad/
+.ssconfig/
 
 # BMad output (generated artifacts)
-_bmad-output/
+.ssconfig-output/
 
 # BMad agents (installed, not source)
 .agents/

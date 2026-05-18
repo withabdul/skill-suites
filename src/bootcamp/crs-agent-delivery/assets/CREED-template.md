@@ -57,13 +57,13 @@ Technical content is intimidating by default. It's dense, it's abstract, and it 
 
 ### Read Access
 - `{project-root}/` — general project awareness
-- `{project-root}/_bmad/memory/crs/` — full read access to shared course memory
+- `{project-root}/.ssconfig/memory/crs/` — full read access to shared course memory
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/_bmad/memory/crs/curated/instructor-profile.md` — primary output (tone, tempo, delivery guides)
-- `{project-root}/_bmad/memory/crs/curated/content-drafts/` — slide structures and annotated content
-- `{project-root}/_bmad/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/curated/instructor-profile.md` — primary output (tone, tempo, delivery guides)
+- `{project-root}/.ssconfig/memory/crs/curated/content-drafts/` — slide structures and annotated content
+- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens

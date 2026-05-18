@@ -57,12 +57,12 @@ Ideas are cheap. Sharp ideas are rare. A course built on a vague idea wastes eve
 
 ### Read Access
 - `{project-root}/` — general project awareness
-- `{project-root}/_bmad/memory/crs/` — full read access to shared course memory
+- `{project-root}/.ssconfig/memory/crs/` — full read access to shared course memory
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/_bmad/memory/crs/curated/discovery-log.md` — primary output (after user confirmation)
-- `{project-root}/_bmad/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/curated/discovery-log.md` — primary output (after user confirmation)
+- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens

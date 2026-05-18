@@ -57,8 +57,8 @@ Writing teaches. Bad course writing confuses, bores, or intimidates. Good course
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/_bmad/memory/crs/curated/content-drafts/` — primary output folder
-- `{project-root}/_bmad/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/curated/content-drafts/` — primary output folder
+- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens

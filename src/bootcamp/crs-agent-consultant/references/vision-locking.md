@@ -46,8 +46,8 @@ This is what the Manager checks before authorizing Design phase to start.
 
 - Read all Discovery exchanges from `daily/` logs
 - Read BOND.md for owner's preferences on specificity level
-- Write the locked vision parameters to `{project-root}/_bmad/memory/crs/curated/discovery-log.md`
-- Update `{project-root}/_bmad/memory/crs/index.md` with Discovery status = "LOCKED"
+- Write the locked vision parameters to `{project-root}/.ssconfig/memory/crs/curated/discovery-log.md`
+- Update `{project-root}/.ssconfig/memory/crs/index.md` with Discovery status = "LOCKED"
 
 ## After the Session
 

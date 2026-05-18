@@ -80,10 +80,10 @@ When presenting a prerequisite map, use this structure:
 
 ## Memory Integration
 
-- Read `{project-root}/_bmad/memory/crs/curated/discovery-log.md` for course scope and audience baseline knowledge
-- Read `{project-root}/_bmad/memory/crs/curated/knowledge-base.md` for technical dependencies and concept relationships
+- Read `{project-root}/.ssconfig/memory/crs/curated/discovery-log.md` for course scope and audience baseline knowledge
+- Read `{project-root}/.ssconfig/memory/crs/curated/knowledge-base.md` for technical dependencies and concept relationships
 - Cross-reference with `DYNAMIC_TIMELINE` output to ensure prerequisite order matches time allocation
-- Write finalized prerequisite map to `{project-root}/_bmad/memory/crs/curated/curriculum-design.md`
+- Write finalized prerequisite map to `{project-root}/.ssconfig/memory/crs/curated/curriculum-design.md`
 
 ## After the Session
 

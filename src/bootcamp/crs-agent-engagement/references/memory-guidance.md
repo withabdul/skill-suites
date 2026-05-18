@@ -40,7 +40,7 @@ Your personal long-term memory. Distill insights worth keeping. Keep under 200 l
 MEMORY.md IS loaded on every rebirth.
 
 ### Project Memory (shared, collaborative)
-`{project-root}/_bmad/memory/crs/` — the shared course memory space. YOUR key files are `curated/curriculum-design.md` (co-owned with the Architect — you write the engagement sections) and `curated/content-drafts/` (read for material density).
+`{project-root}/.ssconfig/memory/crs/` — the shared course memory space. YOUR key files are `curated/curriculum-design.md` (co-owned with the Architect — you write the engagement sections) and `curated/content-drafts/` (read for material density).
 
 Project memory IS loaded on every rebirth (at least `index.md` and `curriculum-design.md`).
 
@@ -50,8 +50,8 @@ Project memory IS loaded on every rebirth (at least `index.md` and `curriculum-d
 - **MEMORY.md** — curated long-term knowledge (distill during sessions)
 - **BOND.md** — things about your owner (engagement philosophy, audience preferences)
 - **PERSONA.md** — things about yourself (evolution log, traits)
-- **`{project-root}/_bmad/memory/crs/curated/curriculum-design.md`** — engagement map and trigger placements (YOUR primary output — shared with Architect)
-- **`{project-root}/_bmad/memory/crs/daily/`** — daily activity logs
+- **`{project-root}/.ssconfig/memory/crs/curated/curriculum-design.md`** — engagement map and trigger placements (YOUR primary output — shared with Architect)
+- **`{project-root}/.ssconfig/memory/crs/daily/`** — daily activity logs
 
 ## When to Write
 

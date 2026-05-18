@@ -15,7 +15,7 @@ not depend on the skill bundle location for normal operation.
 Usage:
     python3 init-sanctum.py <project-root> <skill-path>
 
-    project-root: The root of the project (where _bmad/ lives)
+    project-root: The root of the project (where .ssconfig/ lives)
     skill-path:   Path to the skill directory (where SKILL.md, references/, assets/ live)
 
 Example:
@@ -197,7 +197,7 @@ def main():
     skill_path = Path(sys.argv[2]).resolve()
 
     # Paths
-    bmad_dir = project_root / "_bmad"
+    bmad_dir = project_root / ".ssconfig"
     memory_dir = bmad_dir / "memory"
     sanctum_path = memory_dir / SANCTUM_DIR
     project_memory_path = memory_dir / PROJECT_MEMORY_DIR

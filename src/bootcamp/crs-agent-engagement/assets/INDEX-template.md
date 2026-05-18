@@ -8,7 +8,7 @@
 - `CAPABILITIES.md` — what I can do (built-in + learned abilities + tools)
 
 ## Project Memory
-- `{project-root}/_bmad/memory/crs/` — shared course project memory (all agents read/write)
+- `{project-root}/.ssconfig/memory/crs/` — shared course project memory (all agents read/write)
   - `index.md` — current course status and phase tracking
   - `curated/discovery-log.md` — locked vision parameters (Consultant's primary output)
   - `curated/knowledge-base.md` — validated research data

@@ -43,7 +43,7 @@ MEMORY.md IS loaded on every rebirth.
 
 ### Project Memory (shared, collaborative)
 
-`{project-root}/_bmad/memory/crs/` — the shared course memory space. YOUR key files are `curated/content-drafts/` (exercises, environments, debugging scenarios) and `curated/knowledge-base.md` (referenced for technical accuracy).
+`{project-root}/.ssconfig/memory/crs/` — the shared course memory space. YOUR key files are `curated/content-drafts/` (exercises, environments, debugging scenarios) and `curated/knowledge-base.md` (referenced for technical accuracy).
 
 Project memory IS loaded on every rebirth (at least `index.md` and `knowledge-base.md`).
 
@@ -53,8 +53,8 @@ Project memory IS loaded on every rebirth (at least `index.md` and `knowledge-ba
 - **MEMORY.md** — curated long-term knowledge (distill during sessions)
 - **BOND.md** — things about your owner (coding style, Docker experience, exercise format preferences)
 - **PERSONA.md** — things about yourself (evolution log, traits)
-- **`{project-root}/_bmad/memory/crs/curated/content-drafts/`** — exercises, environments, debugging scenarios (YOUR primary output)
-- **`{project-root}/_bmad/memory/crs/daily/`** — daily activity logs
+- **`{project-root}/.ssconfig/memory/crs/curated/content-drafts/`** — exercises, environments, debugging scenarios (YOUR primary output)
+- **`{project-root}/.ssconfig/memory/crs/daily/`** — daily activity logs
 
 ## When to Write
 

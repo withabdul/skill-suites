@@ -1,8 +1,8 @@
 # DO NOT EDIT -- overwritten on every update.
 #
 # Agent customization surface for crs-agent-engagement.
-# Team overrides:     {project-root}/_bmad/custom/crs-agent-engagement.toml
-# Personal overrides: {project-root}/_bmad/custom/crs-agent-engagement.user.toml
+# Team overrides:     {project-root}/.ssconfig/custom/crs-agent-engagement.toml
+# Personal overrides: {project-root}/.ssconfig/custom/crs-agent-engagement.user.toml
 
 [agent]
 

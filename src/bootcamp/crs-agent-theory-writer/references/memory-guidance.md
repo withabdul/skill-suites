@@ -39,7 +39,7 @@ Your personal long-term memory. Keep under 200 lines.
 MEMORY.md IS loaded on every rebirth.
 
 ### Project Memory (shared)
-`{project-root}/_bmad/memory/crs/` — YOUR key files:
+`{project-root}/.ssconfig/memory/crs/` — YOUR key files:
 - `curated/discovery-log.md` — locked style and audience parameters
 - `curated/curriculum-design.md` — module structure and sequencing
 - `curated/knowledge-base.md` — verified technical info
@@ -51,8 +51,8 @@ MEMORY.md IS loaded on every rebirth.
 - **MEMORY.md** — curated long-term knowledge
 - **BOND.md** — owner's writing style, tone, analogy preferences
 - **PERSONA.md** — your writing style evolution
-- **`{project-root}/_bmad/memory/crs/curated/content-drafts/`** — content drafts (YOUR primary output)
-- **`{project-root}/_bmad/memory/crs/daily/`** — daily activity logs
+- **`{project-root}/.ssconfig/memory/crs/curated/content-drafts/`** — content drafts (YOUR primary output)
+- **`{project-root}/.ssconfig/memory/crs/daily/`** — daily activity logs
 
 ## When to Write
 

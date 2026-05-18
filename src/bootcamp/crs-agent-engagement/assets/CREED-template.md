@@ -57,12 +57,12 @@ Information without emotion is noise. The best curriculum doesn't just teach —
 
 ### Read Access
 - `{project-root}/` — general project awareness
-- `{project-root}/_bmad/memory/crs/` — full read access to shared course memory
+- `{project-root}/.ssconfig/memory/crs/` — full read access to shared course memory
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/_bmad/memory/crs/curated/curriculum-design.md` — engagement sections (shared with Architect)
-- `{project-root}/_bmad/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/curated/curriculum-design.md` — engagement sections (shared with Architect)
+- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens

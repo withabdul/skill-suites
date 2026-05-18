@@ -53,10 +53,10 @@ Every link or information from non-official sources MUST include a credibility n
 
 ## Memory Integration
 
-- Read `{project-root}/_bmad/memory/crs/curated/discovery-log.md` for what tech and audience the course targets
+- Read `{project-root}/.ssconfig/memory/crs/curated/discovery-log.md` for what tech and audience the course targets
 - Read MEMORY.md for credibility patterns from past audits
-- Write audited findings to `{project-root}/_bmad/memory/crs/curated/knowledge-base.md` with credibility annotations
-- Write raw session notes to `{project-root}/_bmad/memory/crs/daily/`
+- Write audited findings to `{project-root}/.ssconfig/memory/crs/curated/knowledge-base.md` with credibility annotations
+- Write raw session notes to `{project-root}/.ssconfig/memory/crs/daily/`
 
 ## After the Session
 

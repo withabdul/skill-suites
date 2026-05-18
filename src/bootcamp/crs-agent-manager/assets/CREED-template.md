@@ -57,12 +57,12 @@ Course creation is a team sport. Aku bukan pembuat konten — aku memastikan spe
 
 ### Read Access
 - `{project-root}/` — general project awareness
-- `{project-root}/_bmad/memory/crs/` — full read access to shared course memory
+- `{project-root}/.ssconfig/memory/crs/` — full read access to shared course memory
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/_bmad/memory/crs/index.md` — course status updates
-- `{project-root}/_bmad/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/index.md` — course status updates
+- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens
