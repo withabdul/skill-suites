@@ -1,0 +1,91 @@
+code: crs
+name: "Courses & Bootcamp Suite"
+description: "Comprehensive suite for course architecture, instructor guidelines, and bootcamp management using PDLC methodology."
+module_version: 1.0.0
+default_selected: false
+module_greeting: >
+  🎓 Courses & Bootcamp Suite is ready! Your 9-agent team is installed and waiting.
+  Run any agent to start — or use crs-agent-manager to kick off a full PDLC workflow.
+  Run this setup again anytime to reconfigure settings.
+
+  For questions, suggestions and support — reach out to the module author.
+
+crs_language:
+  prompt: "Apa bahasa utama yang digunakan untuk materi?"
+  default: "Indonesia"
+  result: "{value}"
+
+crs_style_preference:
+  prompt: "Pilih preferensi gaya materi utama"
+  type: single-select
+  options:
+    - value: "Dicoding"
+      label: "Dicoding (text-heavy, structured)"
+    - value: "BWA"
+      label: "BuildWithAngga (video-oriented, project-based)"
+    - value: "MySkill"
+      label: "MySkill (bootcamp/video hybrid)"
+    - value: "Hybrid"
+      label: "Hybrid (adaptive mix)"
+  default: "Hybrid"
+  result: "{value}"
+
+crs_default_mode:
+  prompt: "Apa mode bootcamp standar yang diinginkan?"
+  type: single-select
+  options:
+    - value: "Online"
+      label: "Online"
+    - value: "Offline"
+      label: "Offline"
+    - value: "Hybrid"
+      label: "Hybrid (online + offline)"
+  default: "Hybrid"
+  result: "{value}"
+
+agents:
+  - code: agent-manager
+    name: ""
+    title: "Course Orchestrator"
+    icon: "🎯"
+    description: "Mengkoordinasikan pembuatan course end-to-end melalui PDLC."
+  - code: agent-consultant
+    name: ""
+    title: "Course Consultant"
+    icon: "🔍"
+    description: "Menggali dan mengunci visi course melalui deep-dive questioning kritis."
+  - code: agent-researcher
+    name: ""
+    title: "Technical Researcher"
+    icon: "📚"
+    description: "Riset teknis tervalidasi dan analisis audiens untuk course creation."
+  - code: agent-architect
+    name: ""
+    title: "Curriculum Architect"
+    icon: "🏗️"
+    description: "Menyusun silabus, timeline, dan rancangan mini-project untuk course creation."
+  - code: agent-theory-writer
+    name: ""
+    title: "Theory Writer"
+    icon: "✍️"
+    description: "Menulis materi teks course yang adaptif terhadap level audiens dan gaya preferensi."
+  - code: agent-code-smith
+    name: ""
+    title: "Course Code Smith"
+    icon: "🔧"
+    description: "Membuat coding exercises, environment scaffolding, dan debugging scenarios yang bersih dan runnable."
+  - code: agent-engagement
+    name: ""
+    title: "Course Engagement Architect"
+    icon: "💡"
+    description: "Merancang strategi retensi, Aha! moments, dan engagement triggers untuk materi course."
+  - code: agent-simulator
+    name: ""
+    title: "Course Simulator"
+    icon: "🪞"
+    description: "Mengaudit kualitas materi course melalui simulasi murid dengan berbagai persona ekstrem."
+  - code: agent-delivery
+    name: ""
+    title: "Course Delivery Coach"
+    icon: "🎤"
+    description: "Menyusun panduan penyampaian instruktur dan struktur slide presentasi agar materi teknis tidak mengintimidasi."
