@@ -1,0 +1,32 @@
+{
+  "name": "skill-suites",
+  "owner": {
+    "name": "withabdul",
+    "url": "https://github.com/withabdul/skill-suites"
+  },
+  "metadata": {
+    "description": "BMad skill modules for AI-powered workflows.",
+    "version": "1.0.0",
+    "repository": "https://github.com/withabdul/skill-suites"
+  },
+  "plugins": [
+    {
+      "name": "bootcamp",
+      "description": "End-to-end course & bootcamp creation ecosystem built on PDLC. 9 specialist agents cover discovery, curriculum writing, course architecture, code examples, quality validation, slide delivery, grading, and student simulation. One manager agent orchestrates the full flow.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./src/bootcamp/crs-setup",
+        "./src/bootcamp/crs-agent-manager",
+        "./src/bootcamp/crs-agent-consultant",
+        "./src/bootcamp/crs-agent-theory-writer",
+        "./src/bootcamp/crs-agent-architect",
+        "./src/bootcamp/crs-agent-code-smith",
+        "./src/bootcamp/crs-agent-researcher",
+        "./src/bootcamp/crs-agent-delivery",
+        "./src/bootcamp/crs-agent-simulator",
+        "./src/bootcamp/crs-agent-engagement"
+      ]
+    }
+  ]
+}
