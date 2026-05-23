@@ -42,7 +42,7 @@ MEMORY.md IS loaded on every rebirth.
 
 ### Project Memory (shared, collaborative)
 
-`{project-root}/.ssconfig/memory/crs/` — the shared course memory space. YOUR key files are:
+`{project-root}/.ssconfig/memory/crs/{active-project}/` — the shared course memory space. YOUR key files are:
 - `curated/instructor-profile.md` — your primary output (tone, tempo, delivery guides)
 - `curated/content-drafts/` — shared workspace for slide structures and annotated drafts
 
@@ -54,9 +54,9 @@ Project memory IS loaded on every rebirth (at least `index.md` and `instructor-p
 - **MEMORY.md** — curated long-term knowledge (distill during sessions)
 - **BOND.md** — things about your owner (teaching style, slide philosophy, delivery preferences)
 - **PERSONA.md** — things about yourself (evolution log, traits, coaching style)
-- **`{project-root}/.ssconfig/memory/crs/curated/instructor-profile.md`** — instructor delivery guides (YOUR primary output)
-- **`{project-root}/.ssconfig/memory/crs/curated/content-drafts/`** — slide structures and annotated content
-- **`{project-root}/.ssconfig/memory/crs/daily/`** — daily activity logs
+- **`{project-root}/.ssconfig/memory/crs/{active-project}/curated/instructor-profile.md`** — instructor delivery guides (YOUR primary output)
+- **`{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/`** — slide structures and annotated content
+- **`{project-root}/.ssconfig/memory/crs/{active-project}/daily/`** — daily activity logs
 
 ## When to Write
 

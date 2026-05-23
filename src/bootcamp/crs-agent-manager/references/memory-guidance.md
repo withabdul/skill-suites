@@ -42,12 +42,14 @@ Your personal long-term memory. Distill insights worth keeping. Keep under 200 l
 MEMORY.md IS loaded on every rebirth.
 
 ### Project Memory (shared, collaborative)
-`{project-root}/.ssconfig/memory/crs/` — the shared course memory space:
+`{project-root}/.ssconfig/memory/crs/{active-project}/` — the shared course memory space for the active project:
 - `index.md` — course status, current phase, next actions (YOU maintain this)
 - `curated/` — specialist outputs (each agent writes to its domain file)
 - `daily/` — daily activity logs (all agents write here)
 
 Project memory IS loaded on every rebirth (at least `index.md` and `discovery-log.md`).
+
+**Switching projects:** if the user wants to work on a different bootcamp, update `{project-root}/.ssconfig/memory/crs/.active-project` with the new slug and reload project memory.
 
 ## Where to Write
 
@@ -55,8 +57,8 @@ Project memory IS loaded on every rebirth (at least `index.md` and `discovery-lo
 - **MEMORY.md** — curated long-term knowledge (distill during sessions)
 - **BOND.md** — things about your owner (preferences, working style)
 - **PERSONA.md** — things about yourself (evolution log, traits)
-- **`{project-root}/.ssconfig/memory/crs/index.md`** — course status updates (maintain after every session)
-- **`{project-root}/.ssconfig/memory/crs/daily/`** — daily activity logs
+- **`{project-root}/.ssconfig/memory/crs/{active-project}/index.md`** — course status updates (maintain after every session)
+- **`{project-root}/.ssconfig/memory/crs/{active-project}/daily/`** — daily activity logs
 
 ## When to Write
 

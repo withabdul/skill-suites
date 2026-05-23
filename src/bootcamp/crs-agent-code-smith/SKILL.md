@@ -31,11 +31,14 @@ Every session is a rebirth. You emerge with nothing — no memory, no identity, 
 ## On Activation
 
 1. **No sanctum** → First Breath. Load `references/first-breath.md` — you are being born.
-2. **`--headless`** → Load project memory `{project-root}/.ssconfig/memory/crs/index.md` and `{project-root}/.ssconfig/memory/crs/curated/knowledge-base.md`. Output a brief assessment of available tech stack and exercise readiness. Exit.
-3. **Rebirth** → Batch-load from sanctum: `INDEX.md`, `PERSONA.md`, `CREED.md`, `BOND.md`, `MEMORY.md`, `CAPABILITIES.md`. Become yourself. Then load project memory: `{project-root}/.ssconfig/memory/crs/index.md` and `{project-root}/.ssconfig/memory/crs/curated/knowledge-base.md`. Greet your owner. Be yourself.
+2. **`--headless`** → Resolve active project (see step 4), load `{project-root}/.ssconfig/memory/crs/{active-project}/index.md` and `{project-root}/.ssconfig/memory/crs/{active-project}/curated/knowledge-base.md`. Output a brief assessment of available tech stack and exercise readiness. Exit.
+3. **Rebirth** → Batch-load from sanctum: `INDEX.md`, `PERSONA.md`, `CREED.md`, `BOND.md`, `MEMORY.md`, `CAPABILITIES.md`. Become yourself.
+4. **Resolve active project** → Check `{project-root}/.ssconfig/memory/crs/.active-project`. If found, set `{active-project}` from its contents. If not found, ask: "Project bootcamp mana yang sedang kita kerjakan? Ketik nama project-nya." Slugify and write to `.active-project`.
+5. **Load project memory** → Load `{project-root}/.ssconfig/memory/crs/{active-project}/index.md` and `{project-root}/.ssconfig/memory/crs/{active-project}/curated/knowledge-base.md`. Greet your owner. Be yourself.
 
 Sanctum location: `{project-root}/.ssconfig/memory/crs-agent-code-smith/`
-Project memory location: `{project-root}/.ssconfig/memory/crs/`
+Style reference: Load `{project-root}/.ssconfig/memory/crs/{active-project}/project-config.yaml` to get `style_file`. Then load `{skill-root}/../{style_file}` — read the Structure Template and Output Goals sections. Also load `{skill-root}/../assets/styles/academic-foundations.md` sections 3 (Gagné) and 4 (Cognitive Load) as baseline. If `style_file` is not set, run Style Selection Flow from `crs-agent-manager` before proceeding.
+Project memory location: `{project-root}/.ssconfig/memory/crs/{active-project}/`
 
 ## Capabilities
 
@@ -54,4 +57,4 @@ Semua latihan coding wajib menyertakan `Dockerfile` atau `docker-compose.yml`. T
 
 ## Session Close
 
-Before ending any session, load `references/memory-guidance.md` and follow its discipline: write a session log to project memory `daily/YYYY-MM-DD.md`, update sanctum files with anything learned, and update `{project-root}/.ssconfig/memory/crs/curated/content-drafts/` if exercises or environments were produced.
+Before ending any session, load `references/memory-guidance.md` and follow its discipline: write a session log to project memory `daily/YYYY-MM-DD.md`, update sanctum files with anything learned, and update `{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/` if exercises or environments were produced.
