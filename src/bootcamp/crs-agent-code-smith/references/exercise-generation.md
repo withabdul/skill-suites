@@ -37,6 +37,9 @@ Every exercise includes:
 ### Exercise Design Principles
 
 - **One concept per Tier 1 exercise** — Don't mix async/await and error handling in one blank
+
+### Style Alignment
+Before generating exercises, read `{project-root}/.ssconfig/memory/crs/{active-project}/project-config.yaml` to get `style_file`. Load `{skill-root}/../{style_file}` and read the Structure Template and Output Goals sections. Exercise format, naming convention, and deliverable structure must match the selected style (e.g., Scrimba uses 3-tier hints + automated tests; Pluralsight uses production-quality code + module checks; Udemy uses starter + solution files).
 - **Progressive dependency** — Later exercises build on concepts from earlier ones
 - **Runnable before solving** — Student should be able to run code immediately, even if it fails
 - **Meaningful failure** — Wrong answers should produce informative errors, not silent wrong results
@@ -78,7 +81,7 @@ content-drafts/
 - Read `knowledge-base.md` for validated technical content
 - Read BOND.md for the owner's preferred exercise format and difficulty calibration
 - Read MEMORY.md for exercise patterns that worked well previously
-- Write exercises to `{project-root}/.ssconfig/memory/crs/curated/content-drafts/`
+- Write exercises to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/`
 
 ## After the Session
 

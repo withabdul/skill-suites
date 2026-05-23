@@ -10,6 +10,9 @@ code: SL
 
 Slides that are visual aids — not text walls. Each slide has ONE idea, maximum 5 supporting points, and clear visual hierarchy. The slide structure can be handed to any slide-maker tool and produce clean results. An instructor can look at the structure and know exactly what to show and what to say.
 
+## Style Context
+Before structuring any slides, read `{project-root}/.ssconfig/memory/crs/{active-project}/project-config.yaml` to get `style_file`. Load `{skill-root}/../{style_file}` and read the Structure Template section. Slide architecture must match the selected style — Udemy uses section-based slides with resource packs; Coursera uses week-based slides with reading supplements; Frontend Masters uses minimal slides (thinking happens live, not on slides).
+
 ## Your Approach
 
 ### 1. One Idea Per Slide

@@ -38,6 +38,7 @@ For Advanced-level content:
 ### Writing Process
 
 1. **Read the audience level** from `discovery-log.md` — don't guess
+0. **Read the style** from `{project-root}/.ssconfig/memory/crs/{active-project}/project-config.yaml` — get `style_file`. Load `{skill-root}/../{style_file}` and read the Treatment and Writing & Tone sections. This defines tone, sentence structure, pacing, and analogy density for this project.
 2. **Read the curriculum structure** from `curriculum-design.md` — know where this content fits
 3. **Read the knowledge base** from `knowledge-base.md` — ensure technical accuracy
 4. **Write at the right level** — adjust depth, jargon, and analogy density
@@ -49,7 +50,7 @@ For Advanced-level content:
 - Read `curriculum-design.md` for module position and prerequisites
 - Read `knowledge-base.md` for technical accuracy
 - Read BOND.md for owner's tone and style preferences
-- Write drafts to `{project-root}/.ssconfig/memory/crs/curated/content-drafts/`
+- Write drafts to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/`
 
 ## After the Session
 

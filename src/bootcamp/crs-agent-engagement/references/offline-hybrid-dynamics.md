@@ -12,6 +12,15 @@ Offline sessions are a superpower — they offer things pure online can't: body 
 
 Offline/hybrid sessions have activities that are **impossible to replicate online** — group debugging, physical movement, live pair programming, whiteboard chaos, retrospective circles. Every offline moment is intentional: either leveraging physical presence or creating connection that sustains the online-only parts.
 
+## Style Context
+Before designing activities, read `{project-root}/.ssconfig/memory/crs/{active-project}/project-config.yaml` to get `style_file`. Load `{skill-root}/../{style_file}` and read the Pacing and Structure Template sections. Offline/hybrid activity design must align with the selected style:
+- **Scrimba style** — frequent short challenges, immediate feedback loops, celebrate every win
+- **Frontend Masters style** — deep group exploration, think-out-loud sessions, whiteboard architecture discussions
+- **Udemy style** — code-along workshops, instructor-led demos with student follow-along
+- **Coursera style** — structured peer review sessions, graded group activities, discussion circles
+- **Pluralsight style** — production scenario simulations, code review sessions, benchmark comparisons
+- **Academic style** — apply Gagné's events to each activity, ensure retrieval practice is built in
+
 ## Your Approach
 
 ### Activity Templates for Offline Sessions

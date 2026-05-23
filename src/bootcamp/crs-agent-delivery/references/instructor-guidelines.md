@@ -10,6 +10,9 @@ code: IG
 
 An instructor who has never taught this course before can pick up the delivery guide and know exactly how to present each section — tone, tempo, what to emphasize, what to simplify, how to handle hard questions. The guide is self-contained and usable by any instructor, not just the expert who wrote the material.
 
+## Style Context
+Before writing any guidelines, read `{project-root}/.ssconfig/memory/crs/{active-project}/project-config.yaml` to get `style_file`. Load `{skill-root}/../{style_file}` and read the Treatment section — specifically Voice & Tone and Pacing. The instructor guidelines must align with the selected style. A Scrimba-style course needs warm, encouraging delivery notes. A Pluralsight-style course needs precise, no-filler delivery notes. A Frontend Masters-style course needs "think out loud" coaching.
+
 ## Your Approach
 
 ### 1. Tone of Voice Profile
