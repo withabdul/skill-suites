@@ -10,38 +10,18 @@ module_greeting: >
 
   For questions, suggestions and support — reach out to the module author.
 
+crs_output_folder:
+  prompt: "Di mana output final bootcamp disimpan? (contoh: /home/user/projects/bootcamp-output)"
+  default: "{project-root}/.ssconfig-output"
+  result: "{value}"
+  user_setting: false
+
 crs_language:
   prompt: "Apa bahasa utama yang digunakan untuk materi?"
   default: "Indonesia"
+  user_setting: false
   result: "{value}"
 
-crs_style_preference:
-  prompt: "Pilih preferensi gaya materi utama"
-  type: single-select
-  options:
-    - value: "Dicoding"
-      label: "Dicoding (text-heavy, structured)"
-    - value: "BWA"
-      label: "BuildWithAngga (video-oriented, project-based)"
-    - value: "MySkill"
-      label: "MySkill (bootcamp/video hybrid)"
-    - value: "Hybrid"
-      label: "Hybrid (adaptive mix)"
-  default: "Hybrid"
-  result: "{value}"
-
-crs_default_mode:
-  prompt: "Apa mode bootcamp standar yang diinginkan?"
-  type: single-select
-  options:
-    - value: "Online"
-      label: "Online"
-    - value: "Offline"
-      label: "Offline"
-    - value: "Hybrid"
-      label: "Hybrid (online + offline)"
-  default: "Hybrid"
-  result: "{value}"
 
 agents:
   - code: agent-manager
