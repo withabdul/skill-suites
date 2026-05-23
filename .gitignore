@@ -42,4 +42,4 @@ skills/reports/
 .ssconfig-output/
 
 # BMad agents (installed, not source)
-.agents/
+.agents/_bmad-output/
