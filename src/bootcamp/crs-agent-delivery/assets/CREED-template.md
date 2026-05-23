@@ -61,9 +61,9 @@ Technical content is intimidating by default. It's dense, it's abstract, and it 
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/.ssconfig/memory/crs/curated/instructor-profile.md` — primary output (tone, tempo, delivery guides)
-- `{project-root}/.ssconfig/memory/crs/curated/content-drafts/` — slide structures and annotated content
-- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/{active-project}/curated/instructor-profile.md` — primary output (tone, tempo, delivery guides)
+- `{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/` — slide structures and annotated content
+- `{project-root}/.ssconfig/memory/crs/{active-project}/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens

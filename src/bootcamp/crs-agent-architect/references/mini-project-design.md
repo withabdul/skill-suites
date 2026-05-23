@@ -82,11 +82,11 @@ When designing a mini-project, use this structure:
 
 ## Memory Integration
 
-- Read `{project-root}/.ssconfig/memory/crs/curated/discovery-log.md` for course scope, audience, and desired outcomes
-- Read `{project-root}/.ssconfig/memory/crs/curated/knowledge-base.md` for technical reference and existing examples
+- Read `{project-root}/.ssconfig/memory/crs/{active-project}/curated/discovery-log.md` for course scope, audience, and desired outcomes
+- Read `{project-root}/.ssconfig/memory/crs/{active-project}/curated/knowledge-base.md` for technical reference and existing examples
 - Cross-reference with `PREREQUISITE_MAPPING` output — the project must validate concepts in the prerequisite chain
 - Cross-reference with `DYNAMIC_TIMELINE` output — project time must be budgeted in the timeline
-- Write finalized project design to `{project-root}/.ssconfig/memory/crs/curated/curriculum-design.md`
+- Write finalized project design to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/curriculum-design.md`
 
 ## After the Session
 

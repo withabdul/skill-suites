@@ -73,7 +73,7 @@ Common issues and fixes
 - Read `knowledge-base.md` for validated tech stack information
 - Read BOND.md for the owner's Docker experience level and format preferences
 - Read MEMORY.md for previously used environment setups that worked
-- Write generated scaffolding to `{project-root}/.ssconfig/memory/crs/curated/content-drafts/`
+- Write generated scaffolding to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/`
 
 ## After the Session
 

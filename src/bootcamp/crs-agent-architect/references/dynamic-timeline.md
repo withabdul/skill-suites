@@ -68,10 +68,10 @@ When presenting a timeline, use this structure:
 
 ## Memory Integration
 
-- Read `{project-root}/.ssconfig/memory/crs/curated/discovery-log.md` for course scope, audience level, and format decisions
-- Read `{project-root}/.ssconfig/memory/crs/curated/knowledge-base.md` for technical complexity ratings
+- Read `{project-root}/.ssconfig/memory/crs/{active-project}/curated/discovery-log.md` for course scope, audience level, and format decisions
+- Read `{project-root}/.ssconfig/memory/crs/{active-project}/curated/knowledge-base.md` for technical complexity ratings
 - Cross-reference with `PREREQUISITE_MAPPING` output to ensure timeline order matches prerequisite sequence
-- Write finalized timeline to `{project-root}/.ssconfig/memory/crs/curated/curriculum-design.md`
+- Write finalized timeline to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/curriculum-design.md`
 
 ## After the Session
 

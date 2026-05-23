@@ -32,15 +32,15 @@ Every deliverable traces cleanly back to the vision in `discovery-log.md`. When 
 1. **Detect** — Read curated outputs and cross-reference with `discovery-log.md`
 2. **Classify** — Is this a clear vision violation or a genuine tradeoff?
 3. **Resolve** — Vision violations get corrected. Tradeoffs get presented to the user.
-4. **Document** — Write the resolution to `{project-root}/.ssconfig/memory/crs/daily/` and update relevant curated files if needed.
+4. **Document** — Write the resolution to `{project-root}/.ssconfig/memory/crs/{active-project}/daily/` and update relevant curated files if needed.
 5. **Notify** — Inform the user of what was resolved and why.
 
 ## Memory Integration
 
-- Read `{project-root}/.ssconfig/memory/crs/curated/discovery-log.md` as the source of truth
+- Read `{project-root}/.ssconfig/memory/crs/{active-project}/curated/discovery-log.md` as the source of truth
 - Read all curated files to detect cross-specialist conflicts
 - Read BOND.md for owner's preferences about tradeoffs (speed vs quality, depth vs breadth)
-- Write resolution decisions to `{project-root}/.ssconfig/memory/crs/daily/`
+- Write resolution decisions to `{project-root}/.ssconfig/memory/crs/{active-project}/daily/`
 
 ## After the Session
 

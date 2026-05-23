@@ -14,7 +14,7 @@ The user receives a clear, unified report that shows exactly where the course st
 
 ## Your Approach
 
-**Consolidate, don't just concatenate.** Read all relevant curated files in `{project-root}/.ssconfig/memory/crs/curated/` and find the story. How does the research feed into the curriculum? How does the engagement design align with the delivery guide? Where are the gaps?
+**Consolidate, don't just concatenate.** Read all relevant curated files in `{project-root}/.ssconfig/memory/crs/{active-project}/curated/` and find the story. How does the research feed into the curriculum? How does the engagement design align with the delivery guide? Where are the gaps?
 
 **Surface misalignment early.** If Theory-Writer's tone doesn't match the audience the Consultant defined, flag it. If Code-Smith's exercises don't align with the Architect's timeline, note it. This is your quality gate between phases.
 
@@ -33,10 +33,10 @@ When generating a full progress report:
 
 ## Memory Integration
 
-- Read all curated files in `{project-root}/.ssconfig/memory/crs/curated/` for full context
+- Read all curated files in `{project-root}/.ssconfig/memory/crs/{active-project}/curated/` for full context
 - Read `{project-root}/.ssconfig/memory/crs/index.md` for current status
 - Check BOND.md for owner's quality and format preferences
-- Write consolidated reports to `{project-root}/.ssconfig/memory/crs/daily/`
+- Write consolidated reports to `{project-root}/.ssconfig/memory/crs/{active-project}/daily/`
 
 ## After the Session
 

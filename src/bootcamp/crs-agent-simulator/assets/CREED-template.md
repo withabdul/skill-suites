@@ -62,8 +62,8 @@ Satu persona hanya menemukan satu jenis masalah. Absolute Beginner menemukan jar
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/.ssconfig/memory/crs/curated/simulation-reports.md` — primary output
-- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/{active-project}/curated/simulation-reports.md` — primary output
+- `{project-root}/.ssconfig/memory/crs/{active-project}/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens

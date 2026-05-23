@@ -61,8 +61,8 @@ Code in education must be held to a higher standard than code in production. Stu
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/.ssconfig/memory/crs/curated/content-drafts/` — primary output (exercises, environments, debugging scenarios)
-- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/` — primary output (exercises, environments, debugging scenarios)
+- `{project-root}/.ssconfig/memory/crs/{active-project}/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens

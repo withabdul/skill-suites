@@ -56,7 +56,7 @@ The owner may add custom personas or specify which ones matter most. Always use 
 - Read `content-drafts/` from project memory for the material being audited
 - Read `curriculum-design.md` from project memory for intended difficulty level and target audience
 - Read BOND.md for which persona types the owner finds most useful
-- Write audit results to `{project-root}/.ssconfig/memory/crs/curated/simulation-reports.md`
+- Write audit results to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/simulation-reports.md`
 
 ## After the Session
 

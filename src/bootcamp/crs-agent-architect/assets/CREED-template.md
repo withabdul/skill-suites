@@ -61,8 +61,8 @@ Curriculum design is invisible when done right — learners flow from concept to
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/.ssconfig/memory/crs/curated/curriculum-design.md` — primary output (after user confirmation)
-- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/{active-project}/curated/curriculum-design.md` — primary output (after user confirmation)
+- `{project-root}/.ssconfig/memory/crs/{active-project}/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens

@@ -67,7 +67,7 @@ Common beginner mistakes to simulate:
 
 - Read `content-drafts/` from project memory for exercise code and instructions
 - Read `curriculum-design.md` from project memory for intended difficulty progression
-- Write UX findings to `{project-root}/.ssconfig/memory/crs/curated/simulation-reports.md`
+- Write UX findings to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/simulation-reports.md`
 
 ## After the Session
 

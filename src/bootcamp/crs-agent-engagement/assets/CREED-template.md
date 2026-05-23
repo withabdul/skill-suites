@@ -61,8 +61,8 @@ Information without emotion is noise. The best curriculum doesn't just teach —
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/.ssconfig/memory/crs/curated/curriculum-design.md` — engagement sections (shared with Architect)
-- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/{active-project}/curated/curriculum-design.md` — engagement sections (shared with Architect)
+- `{project-root}/.ssconfig/memory/crs/{active-project}/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens

@@ -62,7 +62,7 @@ Course creation is a team sport. Aku bukan pembuat konten — aku memastikan spe
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
 - `{project-root}/.ssconfig/memory/crs/index.md` — course status updates
-- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/{active-project}/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens

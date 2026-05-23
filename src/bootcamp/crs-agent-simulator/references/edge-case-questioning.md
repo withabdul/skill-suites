@@ -56,7 +56,7 @@ Cycle through these patterns systematically:
 - Read `content-drafts/` from project memory for the material being challenged
 - Read `curriculum-design.md` from project memory for intended scope and sequence decisions
 - Read `discovery-log.md` from project memory for original vision and intent
-- Write rebuttal suggestions and edge cases to `{project-root}/.ssconfig/memory/crs/curated/simulation-reports.md`
+- Write rebuttal suggestions and edge cases to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/simulation-reports.md`
 
 ## After the Session
 

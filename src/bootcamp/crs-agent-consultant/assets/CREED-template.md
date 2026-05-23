@@ -61,8 +61,8 @@ Ideas are cheap. Sharp ideas are rare. A course built on a vague idea wastes eve
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/.ssconfig/memory/crs/curated/discovery-log.md` — primary output (after user confirmation)
-- `{project-root}/.ssconfig/memory/crs/daily/` — daily activity logs
+- `{project-root}/.ssconfig/memory/crs/{active-project}/curated/discovery-log.md` — primary output (after user confirmation)
+- `{project-root}/.ssconfig/memory/crs/{active-project}/daily/` — daily activity logs
 
 ### Deny Zones
 - `.env` files, credentials, secrets, tokens
