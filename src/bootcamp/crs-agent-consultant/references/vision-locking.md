@@ -6,7 +6,9 @@ code: VL
 
 # Vision Locking
 
-Rangkum hasil Discovery menjadi parameter project yang mengikat. Ketika visi sudah tajam dan feasible, kunci semuanya di `discovery-log.md` sehingga fase eksekusi bisa dimulai dengan fondasi yang solid.
+Summarize Discovery results into binding project parameters. When vision is sharp and feasible, lock everything in `discovery-log.md` so the execution phase can begin with a solid foundation.
+
+For Bootcamp that chooses Daily Matter, these parameters also include the agreed DM template rules.
 
 ## What Success Looks Like
 
@@ -21,7 +23,7 @@ The `discovery-log.md` file contains a complete, specific, unambiguous vision th
 1. **Review all Discovery outputs** — Read every question-answer exchange, every audit finding from `discovery-log.md` daily logs.
 2. **Identify loose ends** — Flag anything still vague or undecided. Resolve these before locking.
 3. **Draft the locked parameters** — Write each parameter as a specific, measurable commitment.
-4. **Explicit confirmation** — Present the locked vision to the owner. Ask: "Ini sudah benar dan lengkap? Kalau ya, ini jadi landasan buat semua fase berikutnya — nggak bisa diubah tanpa diskusi baru."
+4. **Explicit confirmation** — Present the locked vision to the owner. Ask: "Is this correct and complete? If yes, this becomes the foundation for all subsequent phases — cannot be changed without a new discussion."
 5. **Write to discovery-log.md** — Only after explicit user confirmation.
 
 ### Required Parameters for Lock
@@ -35,6 +37,18 @@ The `discovery-log.md` file contains a complete, specific, unambiguous vision th
 | Duration | "15 hours total, 2.5 hours per module" | "A few weeks" |
 | Difficulty | "Beginner-intermediate — assumes basic React knowledge" | "For everyone" |
 | Style | "Text-heavy with code exercises (Dicoding style)" | "Interactive" |
+| Course Type | "Bootcamp" or "Regular" | Not specified |
+| Daily Matter | "Yes — 6 mandatory components + Icebreaker + Pre-class Reading" or "No" | Not decided |
+
+### Daily Matter Locking (Bootcamp + DM = YES only)
+
+If user chooses Bootcamp + Daily Matter, additional parameters that must be locked:
+
+- **DM Template Rules** — Refer to `references/daily-matter-template.md`. Lock agreed mandatory components + user-selected optional components.
+- **DM Delivery Channel** — How is DM distributed? (WhatsApp group, Discord, LMS, email?)
+- **DM Frequency** — Every bootcamp day? Only specific days? (Default: every day)
+
+Write the locked DM rules to `discovery-log.md` under a dedicated section.
 
 ### After Locking
 

@@ -11,14 +11,14 @@ module_greeting: >
   For questions, suggestions and support — reach out to the module author.
 
 crs_output_folder:
-  prompt: "Di mana output final bootcamp disimpan? (contoh: /home/user/projects/bootcamp-output)"
+  prompt: "Where is the final bootcamp output stored? (example: /home/user/projects/bootcamp-output)"
   default: "{project-root}/.ssconfig-output"
   result: "{value}"
   user_setting: false
 
 crs_language:
-  prompt: "Apa bahasa utama yang digunakan untuk materi?"
-  default: "Indonesia"
+  prompt: "What is the primary language used for the material?"
+  default: "English"
   user_setting: false
   result: "{value}"
 
@@ -28,44 +28,44 @@ agents:
     name: ""
     title: "Course Orchestrator"
     icon: "🎯"
-    description: "Mengkoordinasikan pembuatan course end-to-end melalui PDLC."
+    description: "Coordinate end-to-end course creation through PDLC."
   - code: agent-consultant
     name: ""
     title: "Course Consultant"
     icon: "🔍"
-    description: "Menggali dan mengunci visi course melalui deep-dive questioning kritis."
+    description: "Uncover and lock course vision through critical deep-dive questioning."
   - code: agent-researcher
     name: ""
     title: "Technical Researcher"
     icon: "📚"
-    description: "Riset teknis tervalidasi dan analisis audiens untuk course creation."
+    description: "Validated technical research and audience analysis for course creation."
   - code: agent-architect
     name: ""
     title: "Curriculum Architect"
     icon: "🏗️"
-    description: "Menyusun silabus, timeline, dan rancangan mini-project untuk course creation."
+    description: "Build syllabus, timeline, and mini-project design for course creation."
   - code: agent-theory-writer
     name: ""
     title: "Theory Writer"
     icon: "✍️"
-    description: "Menulis materi teks course yang adaptif terhadap level audiens dan gaya preferensi."
+    description: "Write course text material adapted to audience level and preferred style."
   - code: agent-code-smith
     name: ""
     title: "Course Code Smith"
     icon: "🔧"
-    description: "Membuat coding exercises, environment scaffolding, dan debugging scenarios yang bersih dan runnable."
+    description: "Create coding exercises, environment scaffolding, and clean, runnable debugging scenarios."
   - code: agent-engagement
     name: ""
     title: "Course Engagement Architect"
     icon: "💡"
-    description: "Merancang strategi retensi, Aha! moments, dan engagement triggers untuk materi course."
+    description: "Design retention strategies, Aha! moments, and engagement triggers for course material."
   - code: agent-simulator
     name: ""
     title: "Course Simulator"
     icon: "🪞"
-    description: "Mengaudit kualitas materi course melalui simulasi murid dengan berbagai persona ekstrem."
+    description: "Audit course material quality through student simulations with various extreme personas."
   - code: agent-delivery
     name: ""
     title: "Course Delivery Coach"
     icon: "🎤"
-    description: "Menyusun panduan penyampaian instruktur dan struktur slide presentasi agar materi teknis tidak mengintimidasi."
+    description: "Develop instructor delivery guides and presentation slide structure so technical material is not intimidating."

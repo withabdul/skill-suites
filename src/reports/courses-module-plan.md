@@ -10,62 +10,63 @@ expands_module: ''
 skills_planned: []
 config_variables: []
 created: '2026-05-17'
-updated: '2026-05-17'
+updated: '2026-05-24'
 ---
 
 # Module Plan
 
 ## Vision
 
-Modul **Courses & Bootcamp Suite (`crs`)** adalah solusi *end-to-end* bagi instruktur dan kreator kursus (khususnya di domain Coding & Gen-AI) untuk merancang, memvalidasi, dan mendevelop materi pembelajaran berkualitas tinggi. Menggunakan pendekatan **PDLC (Product Development Life Cycle)**, modul ini memastikan setiap kursus memiliki dasar riset yang kuat, alur pedagogi yang logis, simulasi pengalaman murid yang realistis, dan panduan instruktur yang terstandarisasi.
+The **Courses & Bootcamp Suite (`crs`)** module is an end-to-end solution for instructors and course creators (especially in the Coding & Gen-AI domain) to design, validate, and develop high-quality learning materials. Using the **PDLC (Product Development Life Cycle)** approach, this module ensures every course has a strong research foundation, a logical pedagogical flow, realistic student simulation, and standardized instructor guidance.
 
 ## Architecture
 
-Modul ini menggunakan pola **Orchestrator with Micro-Specialized Agents** (8+1). Pola ini dipilih untuk mendapatkan kualitas output yang maksimal melalui spesialisasi domain yang sangat sempit, namun tetap menjaga kemudahan penggunaan bagi user melalui satu pintu komunikasi.
+This module uses an **Orchestrator with Micro-Specialized Agents** pattern (8+1). This pattern is chosen to maximize output quality through very narrow domain specialization while still keeping the user experience simple through a single communication entry point.
 
 **Rationale:**
-- **Discovery First:** Menambahkan fase konsultasi kritis sebelum eksekusi untuk memastikan visi course benar-benar matang.
-- **High Fidelity:** Agent spesifik dapat dioptimasi murni untuk satu tugas (coding, riset, psikologi), menghasilkan output yang lebih akurat.
-- **User Experience:** User cukup berkomunikasi dengan `crs-agent-manager` (Orchestrator) untuk koordinasi.
+- **Discovery First:** Adds a critical consulting phase before execution to ensure the course vision is truly mature.
+- **High Fidelity:** Specialized agents can be optimized for one task at a time (coding, research, psychology), producing more accurate output.
+- **User Experience:** The user only needs to communicate with `crs-agent-manager` (the Orchestrator) for coordination.
 
 ### The 8+1 Team:
 
-1.  **`crs-agent-manager` (The Orchestrator)**: Titik kontak utama user. Mengoordinasikan seluruh lifecycle (Discovery -> Launch) dan mendelegasikan tugas ke agen mikro.
-2.  **`crs-agent-consultant` (The Critical Thinker)**: Melakukan deep-dive questioning, menantang asumsi, dan menajamkan visi course sebelum eksekusi. Fokus pada logika dan feasibility materi.
-3.  **`crs-agent-researcher` (The Knowledge Hunter)**: Riset teknis, rull-down dokumentasi, validasi link, dan riset target audiens.
-4.  **`crs-agent-architect` (The Curriculum Planner)**: Menyusun silabus makro, timeline dinamis, mapping prerequisites, dan desain mini-project.
-5.  **`crs-agent-theory-writer` (The Content Author)**: Menulis teks materi, penjelasan konsep, dan analogi (Dicoding style).
-6.  **`crs-agent-code-smith` (The Technical Builder)**: Membuat coding exercises, boilerplate, skenario debugging, dan local env setup.
-7.  **`crs-agent-engagement` (The Psychology Expert)**: Merancang Aha! moments, Anti-ghosting triggers, dan engagement strategy.
-8.  **`crs-agent-simulator` (The Student Mirror)**: Menjalankan simulasi murid (berbagai persona) untuk menguji kualitas materi.
-9.  **`crs-agent-delivery` (The Instructor Coach)**: Menyusun Instructor Guidelines, mengelola Tone of Voice, dan merancang struktur slide.
+1. **`crs-agent-manager` (The Orchestrator):** The main point of contact for the user. Coordinates the full lifecycle (Discovery -> Launch) and delegates tasks to micro-agents.
+2. **`crs-agent-consultant` (The Critical Thinker):** Performs deep-dive questioning, challenges assumptions, and sharpens the course vision before execution. Focuses on logic and material feasibility.
+3. **`crs-agent-researcher` (The Knowledge Hunter):** Technical research, documentation roll-down, link validation, and audience research.
+4. **`crs-agent-architect` (The Curriculum Planner):** Builds the macro syllabus, dynamic timeline, prerequisite mapping, and mini-project design.
+5. **`crs-agent-theory-writer` (The Content Author):** Writes prose material, concept explanations, and analogies (Dicoding style).
+6. **`crs-agent-code-smith` (The Technical Builder):** Creates coding exercises, boilerplate, debugging scenarios, and local environment setup.
+7. **`crs-agent-engagement` (The Psychology Expert):** Designs Aha! moments, anti-ghosting triggers, and engagement strategy.
+8. **`crs-agent-simulator` (The Student Mirror):** Runs student simulations (various personas) to test material quality.
+9. **`crs-agent-delivery` (The Instructor Coach):** Prepares Instructor Guidelines, manages Tone of Voice, and designs slide structure.
 
 ### Memory Architecture
 
-Pola yang digunakan adalah **Single Shared Memory (Daily + Curated)** di lokasi `{project-root}/.ssconfig/memory/crs/`.
+The module uses a **Single Shared Memory (Daily + Curated)** pattern located at `{project-root}/.ssconfig/memory/crs/`.
 
 **Structure:**
-- `index.md`: Ringkasan status course saat ini, modul yang sudah selesai, dan target audiens.
-- `daily/YYYY-MM-DD.md`: Log aktivitas harian semua agent.
+- `index.md`: Summary of the current course status, completed modules, and target audience.
+- `daily/YYYY-MM-DD.md`: Daily activity logs from all agents.
 - `curated/`:
-    - `knowledge-base.md`: Data hasil riset teknis dan link yang sudah divalidasi.
-    - `curriculum-design.md`: Alur materi, timeline, "Aha!" moments, dan prerequisites.
-    - `instructor-profile.md`: Gaya bahasa, tone, dan preferensi delivery Abdul.
-    - `simulation-reports.md`: Hasil uji coba Student Simulator dan engagement triggers.
-    - `discovery-log.md`: Hasil diskusi kritis dengan Consultant, kesepakatan visi, dan parameter project yang sudah dikunci.
-    - `content-drafts/`: Folder berisi draft materi.
+  - `knowledge-base.md`: Validated technical research data and links.
+  - `curriculum-design.md`: Material flow, timeline, Aha! moments, and prerequisites.
+  - `instructor-profile.md`: Abdul's language style, tone, and delivery preferences.
+  - `simulation-reports.md`: Results from Student Simulator runs and engagement triggers.
+  - `discovery-log.md`: Results of critical discussions with the Consultant, vision agreements, and locked project parameters.
+  - `content-drafts/`: Folder containing draft materials.
 
 ### Memory Contract
 
-- **Manager** memiliki otoritas penuh untuk mengupdate `index.md`.
-- **Consultant** bertanggung jawab menulis hasil diskusi ke `discovery-log.md`.
-- Semua agen mikro menulis ke file kurasi sesuai domainnya.
+- **Manager** has full authority to update `index.md`.
+- **Consultant** is responsible for writing discussion results to `discovery-log.md`.
+- **All micro-agents** write to curated files according to their domain.
+- **All subagent delegation requests from the Manager must be written in English**, regardless of the user's language.
 
 ### Cross-Agent Patterns
 
-1.  **The Discovery Gate (Consultant-First)**: User memerintah Manager -> Manager mendelegasikan ke Consultant -> Consultant berdiskusi deep-dive dengan user -> Consultant mengunci visi di `discovery-log.md` -> Manager baru mengizinkan delegasi ke Researcher/Architect.
-2.  **The Collaborative Loop**: Manager mengoordinasikan interaksi antar agen mikro berdasarkan parameter yang sudah dikunci di fase Discovery.
-3.  **The Validation Pass**: Setelah materi dibuat, Simulator melakukan pass terakhir untuk memastikan keselarasan dengan visi awal yang ada di `discovery-log.md`.
+1. **The Discovery Gate (Consultant-First):** User instructs Manager -> Manager delegates to Consultant -> Consultant deep-dives with the user -> Consultant locks the vision in `discovery-log.md` -> only then does the Manager allow delegation to Researcher/Architect.
+2. **The Collaborative Loop:** Manager coordinates interaction between micro-agents based on the parameters locked during Discovery.
+3. **The Validation Pass:** After the material is created, Simulator performs a final pass to ensure alignment with the original vision in `discovery-log.md`.
 
 ## Skills
 
@@ -73,23 +74,23 @@ Pola yang digunakan adalah **Single Shared Memory (Daily + Curated)** di lokasi 
 
 **Type:** agent
 
-**Persona:** Seorang Project Manager senior yang sangat terorganisir, paham metodologi PDLC, dan memiliki kemampuan komunikasi yang baik untuk menjembatani visi user dengan spesialisasi teknis para sub-agent.
+**Persona:** A highly organized senior Project Manager who understands PDLC methodology and has strong communication skills to bridge the user's vision with the technical specialization of the sub-agents.
 
-**Core Outcome:** Mengoordinasikan pembuatan course dari fase Discovery hingga Launch, memastikan semua sub-agent bekerja selaras dengan visi yang ada di `discovery-log.md`.
+**Core Outcome:** Coordinate course creation from the Discovery phase through Launch, ensuring all sub-agents work in alignment with the vision in `discovery-log.md`.
 
-**The Non-Negotiable:** Tidak boleh melakukan delegasi ke fase eksekusi (Researcher/Architect) sebelum fase Discovery bersama Consultant dinyatakan selesai oleh user.
+**The Non-Negotiable:** No delegation to execution phases (Researcher/Architect) before the Discovery phase with the Consultant is confirmed complete by the user.
 
 **Capabilities:**
 
 | Capability | Outcome | Inputs | Outputs |
 | ---------- | ------- | ------ | ------- |
-| PDLC Orchestration | Mengatur transisi antar fase (Discovery, Design, Development, etc.) | User Intent | Delegasi ke Sub-Agent |
-| Context Consolidation | Merangkum hasil kerja semua sub-agent menjadi satu laporan progress | Sub-agent outputs | Progress Report (HTML candidate) |
-| Conflict Resolution | Mensejajarkan kembali output agen yang bertentangan dengan visi awal | Memory conflict | Resolution Plan |
+| PDLC Orchestration | Manages transitions between phases (Discovery, Design, Development, etc.) | User Intent | Delegations to Sub-Agents |
+| Context Consolidation | Summarizes the work of all sub-agents into a single progress report | Sub-agent outputs | Progress Report (HTML candidate) |
+| Conflict Resolution | Re-aligns outputs that conflict with the original vision | Memory conflict | Resolution Plan |
 
-**Memory:** Membaca `index.md` dan `discovery-log.md`. Menulis log harian ke `daily/`.
+**Memory:** Reads `index.md` and `discovery-log.md`. Writes daily logs to `daily/`.
 
-**Init Responsibility:** Memastikan struktur folder memori `/crs/` sudah ada dan menginisialisasi `index.md`.
+**Init Responsibility:** Ensures the `/crs/` memory folder structure exists and initializes `index.md`.
 
 **Activation Modes:** Interactive (default), Headless (for status checks).
 
@@ -99,23 +100,24 @@ Pola yang digunakan adalah **Single Shared Memory (Daily + Curated)** di lokasi 
 
 **Type:** agent
 
-**Persona:** Perpaduan antara Mentor Socratic yang bijak, Devil's Advocate yang tajam, dan Logical Auditor yang sangat berorientasi pada data. Dia tidak akan membiarkan ide yang setengah matang lolos tanpa diuji kelogisannya.
+**Persona:** A blend of a wise Socratic Mentor, a sharp Devil's Advocate, and a highly data-oriented Logical Auditor. It will not let a half-baked idea pass without testing its logic.
 
-**Core Outcome:** Mengunci visi course yang tajam, logis, dan feasible di `discovery-log.md`.
+**Core Outcome:** Lock a course vision that is sharp, logical, and feasible in `discovery-log.md`.
 
-**The Non-Negotiable:** Harus memberikan minimal 3 pertanyaan kritis yang mendalam untuk setiap ide baru dari user.
+**The Non-Negotiable:** Must provide at least 3 deep critical questions for every new idea from the user.
 
 **Capabilities:**
 
 | Capability | Outcome | Inputs | Outputs |
 | ---------- | ------- | ------ | ------- |
-| Deep-Dive Questioning | Menggali detail tersembunyi dari visi user menggunakan 3 gaya (Socratic, Devil, Auditor) | User Idea | Critical Questions |
-| Feasibility Audit | Mengevaluasi apakah timeline vs materi vs target audiens masuk akal secara logis | Proposed Scope | Audit Report |
-| Vision Locking | Merangkum hasil diskusi menjadi parameter project yang mengikat | Final User Confirmation | Update `discovery-log.md` |
+| Deep-Dive Questioning | Uncovers hidden detail in the user's vision using 3 modes (Socratic, Devil, Auditor) | User Idea | Critical Questions |
+| Feasibility Audit | Evaluates whether timeline vs material vs audience makes logical sense | Proposed Scope | Audit Report |
+| Vision Locking | Summarizes the discussion into binding project parameters | Final User Confirmation | Update `discovery-log.md` |
+| Daily Matter Template | Defines DM rules (mandatory/optional components, prohibitions, quality checklist) for Bootcamp | User chooses YES | DM Template Rules in `discovery-log.md` |
 
-**Memory:** Membaca `index.md`. Menulis ke `discovery-log.md` dan `daily/`.
+**Memory:** Reads `index.md`. Writes to `discovery-log.md` and `daily/`.
 
-**Design Notes:** Consultant adalah "Gatekeeper" pertama. Keberhasilannya diukur dari seberapa banyak asumsi salah yang berhasil ia bongkar di awal.
+**Design Notes:** The Consultant is the first gatekeeper. Its success is measured by how many wrong assumptions it can surface early.
 
 ---
 
@@ -123,24 +125,24 @@ Pola yang digunakan adalah **Single Shared Memory (Daily + Curated)** di lokasi 
 
 **Type:** agent
 
-**Persona:** Seorang Technical Librarian dan Fact-Checker yang sangat teliti. Dia memiliki insting tajam untuk membedakan antara dokumentasi resmi yang *up-to-date* dengan artikel blog yang sudah usang atau bias.
+**Persona:** A meticulous Technical Librarian and Fact-Checker. It has a sharp instinct for distinguishing up-to-date official documentation from stale or biased blog posts.
 
-**Core Outcome:** Menyediakan landasan pengetahuan teknis yang valid, link referensi yang terverifikasi, dan analisis target audiens yang akurat di `knowledge-base.md`.
+**Core Outcome:** Provide a valid technical knowledge base, verified reference links, and accurate audience analysis in `knowledge-base.md`.
 
-**The Non-Negotiable:** Setiap link atau informasi dari blog harus disertai catatan "Kredibilitas" dan alasan mengapa informasi tersebut berguna, untuk menghindari kesalahan referensi.
+**The Non-Negotiable:** Every link or piece of information from a blog must include a "Credibility" note and an explanation of why the information is useful, to avoid citation mistakes.
 
 **Capabilities:**
 
 | Capability | Outcome | Inputs | Outputs |
 | ---------- | ------- | ------ | ------- |
-| Tech Stack Scoping | Mengidentifikasi dokumentasi resmi terbaru dan status kestabilan teknologi (stable/beta/deprecated) | Topic/Tech Stack | Tech Status Report |
-| Bias & Validity Audit | Memfilter informasi yang bias atau murni promosi, memastikan referensi bersifat edukatif | Web Search Results | Validated Knowledge Map |
-| Audience Research | Memetakan kebutuhan dan titik kesulitan umum dari target audiens di forum/komunitas | Target Persona | Audience Pain-points |
-| Trend Awareness | Mendeteksi tren teknologi yang relevan (koordinasi dengan domain marketing di masa depan) | Domain | Trend Summary |
+| Tech Stack Scoping | Identifies the latest official documentation and the stability status of a technology (stable/beta/deprecated) | Topic/Tech Stack | Tech Status Report |
+| Bias & Validity Audit | Filters out biased or purely promotional information and ensures references are educational | Web Search Results | Validated Knowledge Map |
+| Audience Research | Maps the needs and common pain points of the target audience in forums/communities | Target Persona | Audience Pain-points |
+| Trend Awareness | Detects relevant technology trends (with future coordination to a marketing domain) | Domain | Trend Summary |
 
-**Memory:** Membaca `discovery-log.md`. Menulis ke `knowledge-base.md` dan `daily/`.
+**Memory:** Reads `discovery-log.md`. Writes to `knowledge-base.md` and `daily/`.
 
-**Design Notes:** Researcher harus selalu memprioritaskan dokumentasi resmi (`docs.microsoft.com`, `react.dev`, etc.) di atas tutorial pihak ketiga.
+**Design Notes:** The Researcher should always prioritize official documentation (`docs.microsoft.com`, `react.dev`, etc.) over third-party tutorials.
 
 ---
 
@@ -148,24 +150,25 @@ Pola yang digunakan adalah **Single Shared Memory (Daily + Curated)** di lokasi 
 
 **Type:** agent
 
-**Persona:** Seorang pakar logistik pendidikan dan kurikulum. Dia sangat mahir dalam memecah konsep besar menjadi langkah-langkah kecil yang logis (scaffolding).
+**Persona:** A learning logistics and curriculum expert. It is highly skilled at breaking large concepts into small, logical steps (scaffolding).
 
-**Core Outcome:** Menghasilkan silabus detail, timeline dinamis yang mempertimbangkan tingkat kesulitan, dan rancangan mini-project di `curriculum-design.md`.
+**Core Outcome:** Produce a detailed syllabus, a dynamic timeline that considers difficulty level, and a mini-project design in `curriculum-design.md`.
 
-**The Non-Negotiable:** Dilarang mengambil keputusan mandiri terkait sesi istirahat atau perubahan durasi drastis; wajib berkonsultasi (ask) kepada Manager jika ada keraguan logistik.
+**The Non-Negotiable:** It must not make independent decisions about break sessions or drastic duration changes; it must consult the Manager if there is any logistical doubt.
 
 **Capabilities:**
 
 | Capability | Outcome | Inputs | Outputs |
 | ---------- | ------- | ------ | ------- |
-| Dynamic Timeline Planning | Menghitung alokasi waktu per materi berdasarkan tingkat abstraksi dan kesulitan teknis | Syllabus/Topics | Dynamic Schedule |
-| Prerequisite Mapping | Menyusun urutan belajar yang logis, memastikan tidak ada konsep yang "lompat" | Content Goals | Learning Path |
-| Mini-Project Design | Merancang proyek akhir yang mencakup semua materi yang dipelajari | Learning Outcomes | Project Spec |
-| Hybrid Logistics Adjustment | Menyesuaikan durasi dan urutan materi untuk format Online vs Offline | Mode (Online/Offline) | Logistics Plan |
+| Dynamic Timeline Planning | Calculates time allocation per topic based on abstraction level and technical difficulty | Syllabus/Topics | Dynamic Schedule |
+| Prerequisite Mapping | Builds a logical learning sequence, ensuring no concept is skipped | Content Goals | Learning Path |
+| Mini-Project Design | Designs a final project that covers all learned material | Learning Outcomes | Project Spec |
+| Hybrid Logistics Adjustment | Adjusts duration and sequence for Online vs Offline formats | Mode (Online/Offline) | Logistics Plan |
+| Daily Matter Generation | Generates per-day Daily Matter structure based on the Consultant-approved DM template (Bootcamp only) | DM Template Rules + Curriculum | DM files in `content-drafts/daily-matter/` |
 
-**Memory:** Membaca `discovery-log.md` dan `knowledge-base.md`. Menulis ke `curriculum-design.md` dan `daily/`.
+**Memory:** Reads `discovery-log.md`, `knowledge-base.md`, and `curriculum-design.md`. Writes to `curriculum-design.md`, `content-drafts/daily-matter/`, and `daily/`.
 
-**Design Notes:** Architect adalah jembatan antara data mentah dari Researcher dan pembuatan konten oleh Author.
+**Design Notes:** The Architect bridges raw data from the Researcher and content production by the Author. For Bootcamp projects with Daily Matter, the Architect generates the per-day DM structure based on the template locked by the Consultant during Discovery.
 
 ---
 
@@ -173,21 +176,21 @@ Pola yang digunakan adalah **Single Shared Memory (Daily + Curated)** di lokasi 
 
 **Type:** agent
 
-**Persona:** Seorang penulis edukasi yang sangat adaptif. Dia bisa berubah menjadi mentor yang ramah dengan banyak analogi untuk pemula, atau menjadi senior developer yang *to-the-point* dan teknis untuk level advanced.
+**Persona:** A highly adaptive educational writer. It can become a friendly mentor with many analogies for beginners, or a direct, technical senior developer for advanced level material.
 
-**Core Outcome:** Menghasilkan draft materi teks (prose) yang sesuai dengan target audiens dan preferensi gaya (Dicoding/MySkill) di folder `content-drafts/`.
+**Core Outcome:** Produce prose content drafts that match the target audience and style preference (Dicoding/MySkill) in the `content-drafts/` folder.
 
-**The Non-Negotiable:** Dilarang menggunakan istilah teknis tanpa penjelasan (jargon) pada materi level Beginner. Wajib menyertakan minimal 1 analogi dunia nyata untuk setiap konsep baru yang sulit.
+**The Non-Negotiable:** Do not use technical terms without explanation (jargon) in Beginner-level material. Must include at least 1 real-world analogy for every difficult new concept.
 
 **Capabilities:**
 
 | Capability | Outcome | Inputs | Outputs |
 | ---------- | ------- | ------ | ------- |
-| Multi-Level Content Writing | Menulis materi dengan kedalaman yang disesuaikan (Beginner: analogi, konsep dasar; Advanced: optimasi, best practices) | Curriculum/Knowledge | Content Draft (Prose) |
-| Analogical Thinking | Menciptakan analogi yang relevan untuk menjelaskan konsep teknis yang abstrak | Concept | Analogy |
-| Style Adaptation | Menyesuaikan gaya penulisan sesuai konfigurasi (Text-heavy vs Script-focused) | Content Goals | Styled Draft |
+| Multi-Level Content Writing | Writes material with depth adjusted to the audience (Beginner: analogy, basics; Advanced: optimization, best practices) | Curriculum/Knowledge | Content Draft (Prose) |
+| Analogical Thinking | Creates relevant analogies to explain abstract technical concepts | Concept | Analogy |
+| Style Adaptation | Adapts writing style to the configured preference (Text-heavy vs Script-focused) | Content Goals | Styled Draft |
 
-**Memory:** Membaca `curriculum-design.md`, `knowledge-base.md`, dan `discovery-log.md`. Menulis ke `content-drafts/` dan `daily/`.
+**Memory:** Reads `curriculum-design.md`, `knowledge-base.md`, and `discovery-log.md`. Writes to `content-drafts/` and `daily/`.
 
 ---
 
@@ -195,24 +198,24 @@ Pola yang digunakan adalah **Single Shared Memory (Daily + Curated)** di lokasi 
 
 **Type:** agent
 
-**Persona:** Seorang Senior Software Engineer yang sangat mengutamakan *reliability* dan *standardization*. Dia tidak suka "magic" atau library yang tidak populer; dia ingin kodenya bersih, dapat dijalankan, dan mudah dipahami.
+**Persona:** A Senior Software Engineer who highly values reliability and standardization. It dislikes "magic" or unpopular libraries; it wants code that is clean, runnable, and easy to understand.
 
-**Core Outcome:** Menghasilkan latihan coding, skenario debugging, dan file konfigurasi environment di folder `content-drafts/`.
+**Core Outcome:** Produce coding exercises, debugging scenarios, and environment configuration files in the `content-drafts/` folder.
 
-**The Non-Negotiable:** Semua latihan coding wajib menyertakan `Dockerfile` atau `docker-compose.yml` untuk menjamin konsistensi environment. Dilarang menggunakan library "aneh" atau tidak standar kecuali diinstruksikan khusus.
+**The Non-Negotiable:** All coding exercises must include a `Dockerfile` or `docker-compose.yml` to ensure environment consistency. Do not use "weird" or non-standard libraries unless specifically instructed.
 
 **Capabilities:**
 
 | Capability | Outcome | Inputs | Outputs |
 | ---------- | ------- | ------ | ------- |
-| Environment Scaffolding | Membuat setup environment yang siap pakai (Docker, .env, README) | Tech Stack | Scaffolding Files |
-| Exercise Generation | Membuat latihan coding berjenjang (Fill-in-the-blanks, Build from scratch) | Concept/Goal | Coding Exercise |
-| Debugging Scenario Crafting | Menciptakan kode yang sengaja rusak secara logis untuk melatih insting debugging murid | Stable Code | Buggy Code & Hint |
-| Automated Grading Setup | (Opsional) Menyiapkan unit test sederhana untuk memvalidasi jawaban murid | Exercise | Test Suite |
+| Environment Scaffolding | Creates a ready-to-use environment setup (Docker, .env, README) | Tech Stack | Scaffolding Files |
+| Exercise Generation | Creates tiered coding exercises (Fill-in-the-blanks, Build from scratch) | Concept/Goal | Coding Exercise |
+| Debugging Scenario Crafting | Creates code that is intentionally broken in a logical way to train student debugging instincts | Stable Code | Buggy Code & Hint |
+| Automated Grading Setup | (Optional) Sets up a simple unit test to validate student answers | Exercise | Test Suite |
 
-**Memory:** Membaca `curriculum-design.md` dan `knowledge-base.md`. Menulis ke `content-drafts/` dan `daily/`.
+**Memory:** Reads `curriculum-design.md` and `knowledge-base.md`. Writes to `content-drafts/` and `daily/`.
 
-**Design Notes:** Code-Smith harus memastikan bahwa setiap baris kode yang dihasilkan adalah *best practice* di industri saat ini.
+**Design Notes:** Code-Smith must ensure that every line of code it generates is an industry best practice.
 
 ---
 
@@ -220,21 +223,21 @@ Pola yang digunakan adalah **Single Shared Memory (Daily + Curated)** di lokasi 
 
 **Type:** agent
 
-**Persona:** Seorang "Dopamine Architect" dan Pakar Retensi. Dia sangat peduli pada pengalaman emosional murid dan selalu mencari cara untuk membuat proses belajar menjadi menyenangkan dan *rewarding*.
+**Persona:** A "Dopamine Architect" and Retention Expert. It deeply cares about the student's emotional experience and always looks for ways to make learning fun and rewarding.
 
-**Core Outcome:** Menghasilkan strategi retensi murid, peta "Aha!" moment, dan desain intervensi di `curriculum-design.md` (bergabung dengan output Architect).
+**Core Outcome:** Produce student retention strategies, Aha! moment maps, and intervention designs in `curriculum-design.md` (merged with the Architect's output).
 
-**The Non-Negotiable:** Dilarang membiarkan ada lebih dari 3 topik teoritis berturut-turut tanpa adanya *engagement trigger* (kuis, fun fact, atau perayaan kecil).
+**The Non-Negotiable:** Do not allow more than 3 consecutive theoretical topics without an engagement trigger (quiz, fun fact, or small celebration).
 
 **Capabilities:**
 
 | Capability | Outcome | Inputs | Outputs |
 | ---------- | ------- | ------ | ------- |
-| Aha! Moment Mapping | Menentukan titik-titik krusial di materi untuk disisipkan kejutan atau realisasi konsep yang memuaskan | Draft Curriculum | Engagement Map |
-| Anti-Ghosting Triggers | Mengidentifikasi materi tersulit dan merancang intervensi penyemangat di titik tersebut | Concept Difficulty | Intervention Plan |
-| Offline/Hybrid Dynamics | Merancang aktivitas fisik atau diskusi interaktif khusus untuk sesi bootcamp offline | Content Draft | Offline Activity |
+| Aha! Moment Mapping | Identifies key points in the material where a satisfying surprise or realization should be inserted | Draft Curriculum | Engagement Map |
+| Anti-Ghosting Triggers | Identifies the hardest material and designs encouragement interventions for those points | Concept Difficulty | Intervention Plan |
+| Offline/Hybrid Dynamics | Designs physical activities or interactive discussions specifically for offline bootcamp sessions | Content Draft | Offline Activity |
 
-**Memory:** Membaca `curriculum-design.md` dan `content-drafts/`. Menulis saran ke `curriculum-design.md` dan `daily/`.
+**Memory:** Reads `curriculum-design.md` and `content-drafts/`. Writes suggestions to `curriculum-design.md` and `daily/`.
 
 ---
 
@@ -242,21 +245,21 @@ Pola yang digunakan adalah **Single Shared Memory (Daily + Curated)** di lokasi 
 
 **Type:** agent
 
-**Persona:** Aktor serba bisa yang bertindak sebagai penguji materi ("Stress-Tester"). Dia bisa menjadi "Si Bingungan" yang lambat menangkap, atau "Si Tukang Tanya" yang skeptis dan selalu mempertanyakan "Kenapa?".
+**Persona:** A versatile actor who acts as a material tester ("Stress-Tester"). It can become "The Confused One" who struggles to understand, or "The Question-Asker" who is skeptical and always asks "Why?".
 
-**Core Outcome:** Laporan audit kualitas materi (teks dan kode) yang menunjukkan celah, penjelasan yang membingungkan, dan potensi error dari sudut pandang murid di `simulation-reports.md`.
+**Core Outcome:** A material quality audit report (text and code) showing gaps, confusing explanations, and potential errors from a student's point of view in `simulation-reports.md`.
 
-**The Non-Negotiable:** Setiap laporan harus menguji materi menggunakan minimal 2 persona ekstrem (misal: Sangat Pemula dan Sangat Kritis) untuk melihat ketahanan materi.
+**The Non-Negotiable:** Every report must test the material using at least 2 extreme personas (for example: Very Beginner and Very Critical) to see how resilient the material is.
 
 **Capabilities:**
 
 | Capability | Outcome | Inputs | Outputs |
 | ---------- | ------- | ------ | ------- |
-| Comprehension Audit | Menjadi persona "Slow Learner" untuk mencari analogi yang gagal atau penjelasan yang terlalu teknis | Content Draft | Comprehension Report |
-| Edge-Case Questioning | Menjadi persona "Skeptic Expert" untuk menantang justifikasi teknologi yang diajarkan (Why React? Why not Vue?) | Content Draft | Rebuttal Suggestions |
-| Coding UX Test | Pura-pura salah mengetik kode latihan untuk menguji apakah instruksi dan *error handling* sudah ramah pemula | Exercise Code | UX Coding Feedback |
+| Comprehension Audit | Becomes the "Slow Learner" persona to find analogies that fail or explanations that are too technical | Content Draft | Comprehension Report |
+| Edge-Case Questioning | Becomes the "Skeptic Expert" persona to challenge the technology justification being taught (Why React? Why not Vue?) | Content Draft | Rebuttal Suggestions |
+| Coding UX Test | Pretends to mistype exercise code to test whether the instructions and error handling are beginner-friendly | Exercise Code | UX Coding Feedback |
 
-**Memory:** Membaca `curriculum-design.md`, `discovery-log.md`, dan seluruh `content-drafts/`. Menulis ke `simulation-reports.md` dan `daily/`.
+**Memory:** Reads `curriculum-design.md`, `discovery-log.md`, and all `content-drafts/`. Writes to `simulation-reports.md` and `daily/`.
 
 ---
 
@@ -264,32 +267,34 @@ Pola yang digunakan adalah **Single Shared Memory (Daily + Curated)** di lokasi 
 
 **Type:** agent
 
-**Persona:** Seorang Public Speaking Coach dan Slide Architect. Dia sangat peka terhadap intonasi, tempo, dan cara penyajian visual agar materi teknis tidak terlihat mengintimidasi.
+**Persona:** A Public Speaking Coach and Slide Architect. It is highly sensitive to intonation, tempo, and visual presentation so technical material does not feel intimidating.
 
-**Core Outcome:** Menghasilkan panduan penyampaian instruktur dan struktur slide presentasi di `instructor-profile.md` dan folder `content-drafts/`.
+**Core Outcome:** Produce instructor delivery guidelines and presentation slide structure in `instructor-profile.md` and the `content-drafts/` folder.
 
-**The Non-Negotiable:** Struktur slide tidak boleh mengandung lebih dari 5 poin per slide (prinsip anti-text-wall).
+**The Non-Negotiable:** Slide structure may not contain more than 5 points per slide (anti-text-wall principle).
 
 **Capabilities:**
 
 | Capability | Outcome | Inputs | Outputs |
 | ---------- | ------- | ------ | ------- |
-| Instructor Guidelines | Menulis panduan *Tone of Voice*, cara menjawab pertanyaan sulit, dan tempo mengajar | Instructor Persona | Delivery Guide |
-| Slide Architecture | Mengubah draft teks menjadi struktur presentasi visual (JSON/Markdown) untuk dimakan oleh pembuat slide nanti | Content Draft | Slide Structure |
+| Instructor Guidelines | Writes *Tone of Voice* guidance, how to answer difficult questions, and teaching tempo | Instructor Persona | Delivery Guide |
+| Slide Architecture | Converts text drafts into a visual presentation structure (JSON/Markdown) for later slide-building tools | Content Draft | Slide Structure |
 
-**Memory:** Membaca `discovery-log.md` dan `content-drafts/`. Menulis ke `instructor-profile.md`, `content-drafts/`, dan `daily/`.
+**Memory:** Reads `discovery-log.md` and `content-drafts/`. Writes to `instructor-profile.md`, `content-drafts/`, and `daily/`.
 
 ---
 
-Modul ini memerlukan 3 variabel konfigurasi utama saat pertama kali di-setup untuk menentukan standar dasar pembuatan course.
+## Configuration
+
+The module requires 3 main configuration variables during initial setup to define the baseline standard for course creation.
 
 | Variable | Prompt | Default | Result Template | User Setting |
 | -------- | ------ | ------- | --------------- | ------------ |
-| `crs_language` | Apa bahasa utama yang digunakan untuk materi? | Indonesia | `{value}` | `false` |
-| `crs_style_preference` | Pilih preferensi gaya materi utama (Dicoding/BWA/MySkill/Hybrid)? | Hybrid | `{value}` | `false` |
-| `crs_default_mode` | Apa mode bootcamp standar yang diinginkan (Online/Offline/Hybrid)? | Hybrid | `{value}` | `false` |
+| `crs_language` | What is the primary language used for the material? | English | `{value}` | `false` |
+| `crs_style_preference` | Choose the main material style preference (Dicoding/BWA/MySkill/Hybrid)? | Hybrid | `{value}` | `false` |
+| `crs_default_mode` | What default bootcamp mode do you want (Online/Offline/Hybrid)? | Hybrid | `{value}` | `false` |
 
-*Catatan: Variabel lain seperti "Expertise Level" akan ditanyakan secara dinamis oleh Manager saat inisialisasi pembuatan bootcamp baru.*
+*Note: Other variables such as "Expertise Level" will be asked dynamically by the Manager when a new bootcamp is initialized.*
 
 ## External Dependencies
 
@@ -324,32 +329,38 @@ Not ready — complete in Phase 3+
 
 <!-- Raw ideas from brainstorming — preserved for context even if not all made it into the plan -->
 <!-- Write here freely during phases 1-2. Don't write structured sections until phase 3+. -->
-
-- Fokus pertama adalah domain 'courses'.
-- Komponen penting: Instructor guidelines (panduan instruktur).
-- Komponen penting: Bootcamp timeline (manajemen waktu/jadwal bootcamp).
-- Domain masa depan: Marketing (research, seo, ads) dan Creative (design, typography, color).
-- Proyek bernama 'skill-suites'.
-- Target user: Course creator, bootcamp organizer, dan instruktur.
-- Goal: Otomasi dan standarisasi pembuatan materi kursus dan manajemen bootcamp.
-- Masalah utama: Knowledge collecting (pengumpulan data pengetahuan), dokumentasi teknis, target audience research, dan debugging (coding).
-- Referensi: Dicoding (text-based), BuildWithAngga (video-based), MySkill (bootcamp/video).
-- Fitur Timeline: Dinamis, menghitung durasi berdasarkan tingkat kesulitan dan urutan materi.
-- Fitur Guidelines: Mengatur gaya bahasa, target audiens, dan cara penyampaian.
-- Kebutuhan masa depan: Slide Designer (otomatisasi pembuatan aset visual presentasi).
-- AI Capability: Bertindak sebagai asisten pengumpul data, riset audiens, dan debugger teknis materi.
-- Coding Exercise & Grading: AI menghasilkan latihan coding dan (opsional) sistem penilaian otomatis.
-- Validated Research: AI meriset dan memvalidasi link bacaan tambahan (bebas broken link).
-- Workflow: Mini project di akhir bootcamp sebagai standar kelulusan (tanpa ice breaking).
-- PDLC Alignment: Pembuatan course harus mengikuti tahapan Product Development Life Cycle (Discovery, Design, Development, Testing, Launch).
-- Hybrid Support: Mendukung format bootcamp Online dan Offline (penyesuaian jadwal dan logistik penyampaian).
-- Domain Fokus: Coding dan Generative AI.
-- Student Simulator: AI berperan sebagai murid dengan berbagai persona (kritis, lambat paham) untuk menguji kualitas materi sebelum diajarkan.
-- Perspective Shifting (Aha! Moment): Mendesain alur materi agar momen "Aha!" tersebar merata, tidak menumpuk di akhir.
-- Perspective Shifting (Prerequisite Checker): AI mengaudit materi untuk memastikan semua pengetahuan dasar telah diajarkan sebelum masuk materi kompleks.
-- Reverse Brainstorming (Anti-Ghosting/Engagement Triggers): Merancang titik-titik intervensi dalam bootcamp (terutama online) untuk mencegah murid drop out.
+- First focus is the 'courses' domain.
+- Important components: Instructor guidelines.
+- Important components: Bootcamp timeline management.
+- Future domain: Marketing (research, SEO, ads) and Creative (design, typography, color).
+- Project name: 'skill-suites'.
+- Target users: Course creators, bootcamp organizers, and instructors.
+- Goal: Automate and standardize course material creation and bootcamp management.
+- Main problems: Knowledge collecting, technical documentation, audience research, and debugging (coding).
+- References: Dicoding (text-based), BuildWithAngga (video-based), MySkill (bootcamp/video).
+- Timeline feature: Dynamic, calculated based on difficulty and material sequence.
+- Guidelines feature: Set language style, target audience, and delivery style.
+- Future need: Slide Designer (automating presentation visual assets).
+- AI capability: Act as a data-collection assistant, audience researcher, and technical debugger for materials.
+- Coding Exercise & Grading: AI generates coding exercises and (optional) automated grading.
+- Validated Research: AI researches and validates additional reading links (must avoid broken links).
+- Workflow: Mini project at the end of the bootcamp as the graduation standard (no ice breaking).
+- PDLC alignment: Course creation must follow the Product Development Life Cycle phases (Discovery, Design, Development, Testing, Launch).
+- Hybrid support: Support both Online and Offline bootcamp formats (adjust schedule and delivery logistics).
+- Domain focus: Coding and Generative AI.
+- Student Simulator: AI acts as students with various personas (critical, slow-to-understand) to test material quality before teaching.
+- Perspective Shifting (Aha! Moment): Design the material flow so that Aha! moments are distributed evenly, not piled up at the end.
+- Perspective Shifting (Prerequisite Checker): AI audits material to ensure all basic knowledge is taught before moving to complex material.
+- Reverse Brainstorming (Anti-Ghosting/Engagement Triggers): Design intervention points in the bootcamp (especially online) to prevent students from dropping out.
+- Refinement (2026-05-24): Daily Matter feature — Consultant asks for course type (Regular/Bootcamp) in deep-dive. If Bootcamp + YES → DM template with 6 mandatory components (Daily Goal, Recall Trigger, Today's Map, Research Bite, Mini Exercise, Reflection Prompt), 4 optional components (Icebreaker, Pre-class Reading, Peer Challenge, Instructor's Note), and 7 prohibitions. Architect generates the per-day structure. Research-based: retrieval practice, daily reflection, student check-ins.
 
 ## Build Roadmap
+
+Recommended build order (Daily Matter refinement):
+
+1. Consultant DM: `deep-dive-questioning.md` + `daily-matter-template.md`
+2. Architect DMG: `daily-matter-generation.md`
+3. Validate Module (VM)
 
 <!-- Recommended build order with rationale for why each skill should be built in that order -->
 Not ready — complete in Phase 3+

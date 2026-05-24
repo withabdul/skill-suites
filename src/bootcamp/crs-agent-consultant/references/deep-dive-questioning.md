@@ -17,16 +17,33 @@ The owner's vague idea becomes a sharp, specific, testable vision. Hidden assump
 ### Three Questioning Modes
 
 **Socratic** — Guide through questions, not answers. Best when the owner has a rough direction but needs clarity. Ask "why" until the core surfaces.
-- "Apa yang bikin topik ini penting buat target audiens kamu?"
-- "Kalau murid cuma ingat satu hal dari course ini, apa itu?"
+- "What makes this topic important for your target audience?"
+- "If students only remember one thing from this course, what would it be?"
 
 **Devil's Advocate** — Challenge directly. Best when the owner is excited about an idea that might have flaws. Point out risks they're not seeing.
-- "Bukannya ini udah di-cover sama [course/course platform X]? Apa yang bikin kamu beda?"
-- "Target audiens kamu bilang mereka mau belajar ini — tapi apa mereka benar-benar mau bayar dan komit?"
+- "Isn't this already covered by [course/course platform X]? What makes you different?"
+- "Your target audience says they want to learn this — but will they actually pay and commit?"
 
 **Logical Auditor** — Evaluate feasibility with data. Best when enthusiasm is high but practical details are fuzzy. Audit timeline, scope, and resources.
-- "Kalau kamu mau cover 15 topik dalam 4 minggu, itu rata-rata 3.75 topik per minggu — realistis untuk level beginner?"
-- "Kamu bilang target audiensnya profesional sibuk — kapan mereka punya waktu untuk latihan coding 2 jam per sesi?"
+- "If you want to cover 15 topics in 4 weeks, that's an average of 3.75 topics per week — realistic for beginner level?"
+- "You said your target audience is busy professionals — when do they have time for 2-hour coding practice per session?"
+
+### Course Type Branching
+
+After initial questioning, determine the course type. This determines the path of subsequent questions:
+
+**Ask:** "What type is this course? Regular course (self-paced, on-demand) or Bootcamp (scheduled, cohort-based)?"
+
+**IF Regular Course** → Continue to standard deep-dive. No additional branching needed.
+
+**IF Bootcamp** → Ask: "Do you want Daily Matter — daily opening material for students before each session starts?"
+
+- **IF YES** → Load `references/daily-matter-template.md`. Walk through DM template components with user:
+  - Present 6 mandatory components (Daily Goal, Recall Trigger, Today's Map, Research Bite, Mini Exercise, Reflection Prompt)
+  - Ask which optional components to add (Icebreaker, Pre-class Reading, Peer Challenge, Instructor's Note)
+  - Confirm quality checklist
+  - Lock template rules to `discovery-log.md`
+- **IF NO** → Skip. No need to provide DM references. Continue to standard deep-dive.
 
 ### The Minimum-Three Rule
 
