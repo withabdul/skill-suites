@@ -5,33 +5,33 @@
 
 ## Platform Character
 
-Scrimba adalah platform interaktif di mana student bisa pause video dan langsung edit kode instructor di dalam video itu sendiri. Ini bukan video biasa — ini adalah interactive scrims. Setiap beberapa menit, student harus solve a challenge sebelum bisa lanjut. Engagement adalah core mechanic, bukan fitur tambahan.
+Scrimba is an interactive platform where students can pause the video and directly edit the instructor's code inside the video itself. This is not a regular video — it is interactive scrims. Every few minutes, students must solve a challenge before they can continue. Engagement is the core mechanic, not an extra feature.
 
-**Tone target:** Friendly, encouraging, beginner-welcoming. Seperti kakak yang sabar mengajari adiknya coding — tidak pernah menghakimi, selalu supportive, tapi tetap challenging.
+**Tone target:** Friendly, encouraging, beginner-welcoming. Like an older sibling patiently teaching a younger sibling to code — never judgmental, always supportive, but still challenging.
 
 ---
 
 ## Treatment
 
 ### Voice & Tone
-- **Warm dan encouraging.** "You've got this!", "Great job getting this far!", "Don't worry if this feels confusing — it will click."
-- **Celebrate small wins.** Setiap challenge yang selesai = momen positif.
-- **Simple language.** Hindari jargon tanpa penjelasan. Kalau harus pakai jargon, define immediately.
-- **Short sentences.** Mudah diikuti, tidak ada kalimat panjang yang membingungkan.
+- **Warm and encouraging.** "You've got this!", "Great job getting this far!", "Don't worry if this feels confusing — it will click."
+- **Celebrate small wins.** Each completed challenge = a positive moment.
+- **Simple language.** Avoid jargon without explanation. If you must use jargon, define it immediately.
+- **Short sentences.** Easy to follow, no long confusing sentences.
 - **Frequent check-ins.** "Does that make sense so far?" "Try this yourself before I show you."
 
 ### Pacing
-- Scrim (interactive video) sangat pendek: 2–5 menit.
-- Setiap 2–3 scrim = satu coding challenge yang harus diselesaikan student.
-- Tidak ada passive watching yang panjang — student harus aktif setiap 5–10 menit.
-- Challenge harus bisa diselesaikan dalam 5–15 menit.
-- Immediate feedback setelah challenge (automated test atau solution reveal).
+- Scrims (interactive videos) are very short: 2–5 minutes.
+- Every 2–3 scrims = one coding challenge that the student must solve.
+- No long passive watching — students must be active every 5–10 minutes.
+- Challenges should be solvable in 5–15 minutes.
+- Immediate feedback after each challenge (automated test or solution reveal).
 
 ### Worked Examples
-- Instructor menulis kode perlahan, menjelaskan setiap baris.
-- Highlight kode yang sedang dibahas — tidak ada "scroll past" tanpa penjelasan.
-- Setelah demo, student langsung diberi challenge yang mirip tapi sedikit berbeda.
-- Solution selalu tersedia setelah student mencoba sendiri.
+- The instructor writes code slowly, explaining every line.
+- Highlight code that is being discussed — no "scroll past" without explanation.
+- After the demo, students immediately get a similar challenge with a small variation.
+- A solution is always available after the student tries it themselves.
 
 ---
 
@@ -134,7 +134,6 @@ Format: `🎯 [Specific, achievable task]`
 ---
 
 ## Quality Checklist (Scrimba-specific)
-
 - [ ] No scrim exceeds 5 minutes
 - [ ] Challenge follows every 2–3 scrims
 - [ ] Every challenge has 3-tier hints

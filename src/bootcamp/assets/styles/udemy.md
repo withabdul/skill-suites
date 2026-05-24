@@ -5,31 +5,31 @@
 
 ## Platform Character
 
-Udemy adalah open marketplace. Instructor adalah brand. Personality dan energy instructor yang membuat course berhasil — bukan institusi. Student membeli karena percaya pada instruktur, bukan platform.
+Udemy is an open marketplace. The instructor is the brand. The instructor's personality and energy are what make a course succeed — not the institution. Students buy because they trust the instructor, not the platform.
 
-**Tone target:** Energetic, direct, personal. Seperti ngobrol dengan senior developer yang excited berbagi ilmu.
+**Tone target:** Energetic, direct, personal. Like talking with a senior developer who is excited to share knowledge.
 
 ---
 
 ## Treatment
 
 ### Voice & Tone
-- **First person, direct.** "I'll show you how to..." bukan "In this lesson, we will..."
-- **Conversational.** Boleh pakai contractions (you'll, we'll, let's). Hindari bahasa formal.
-- **Enthusiastic tapi tidak berlebihan.** Energy tinggi, tapi tidak terasa dipaksakan.
-- **Acknowledge struggle.** "This part trips up a lot of people — here's why." Empati ke learner.
-- **Opinionated.** Instructor boleh punya pendapat. "I prefer this approach because..." lebih engaging dari "there are multiple ways."
+- **First person, direct.** "I'll show you how to..." not "In this lesson, we will..."
+- **Conversational.** Contractions are welcome (you'll, we'll, let's). Avoid formal language.
+- **Enthusiastic but not over the top.** High energy, but not forced.
+- **Acknowledge struggle.** "This part trips up a lot of people — here's why." Empathy for the learner.
+- **Opinionated.** The instructor can have preferences. "I prefer this approach because..." is more engaging than "there are multiple ways."
 
 ### Pacing
-- Satu konsep per video. Jangan gabungkan dua topik dalam satu lecture.
-- Video 5–10 menit. Lebih dari 12 menit = pecah jadi dua.
-- Setiap section (3–8 lectures) harus punya satu deliverable yang jelas.
-- Mulai course dengan "quick win" di lecture 2–3 — sesuatu yang bisa langsung dicoba student.
+- One concept per video. Do not combine two topics in one lecture.
+- Video 5–10 minutes. More than 12 minutes = split into two.
+- Every section (3–8 lectures) should have one clear deliverable.
+- Start the course with a "quick win" in lectures 2–3 — something students can try immediately.
 
 ### Worked Examples
-- Selalu code live, bukan paste code jadi. Student harus lihat proses, bukan hasil.
-- Buat typo dan fix di depan kamera — ini normal dan membantu student belajar debugging.
-- Setelah demo, berikan exercise yang mirip tapi dengan variasi kecil.
+- Always code live, not paste finished code. Students should see the process, not just the result.
+- Make a typo and fix it on camera — this is normal and helps students learn debugging.
+- After the demo, give an exercise that is similar but with a small variation.
 
 ---
 
@@ -116,10 +116,9 @@ Format: `Exercise: [specific task]`
 ---
 
 ## Quality Checklist (Udemy-specific)
-
 - [ ] Every lecture starts with a hook (problem or demo of end result)
 - [ ] No lecture exceeds 12 minutes
-- [ ] Every section ends with something student can run/show
+- [ ] Every section ends with something students can run/show
 - [ ] Worked example shown BEFORE exercise is assigned
 - [ ] Code files provided for every coding lecture
 - [ ] Instructor personality comes through — not robotic

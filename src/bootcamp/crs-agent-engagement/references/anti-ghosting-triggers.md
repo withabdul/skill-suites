@@ -30,12 +30,12 @@ Scan the curriculum for these dropout magnets:
 
 For each ghost-risk point, choose an intervention from your toolkit:
 
-- **Progress checkpoint** — "Kamu sudah selesai 40%! Terus semangat." Visual progress restores momentum.
-- **"You've come this far" reminder** — Acknowledge effort explicitly. "Kamu sudah melewati bagian tersulit — ini bukan halangan lagi, ini bukti kamu bisa."
-- **Difficulty reduction option** — "Kalau ini masih terasa berat, coba versi yang lebih simpel dulu." Side paths reduce shame and prevent abandonment.
-- **Peer comparison normalization** — "Banyak murid yang stuck di bagian ini — ini normal, bukan tanda kamu tidak cocok." Normalizes struggle.
+- **Progress checkpoint** — "You're already 40% done! Keep going." Visual progress restores momentum.
+- **"You've come this far" reminder** — Acknowledge effort explicitly. "You've made it past the hardest part — this isn't a barrier anymore, it's proof you can do it."
+- **Difficulty reduction option** — "If this still feels heavy, try the simpler version first." Side paths reduce shame and prevent abandonment.
+- **Peer comparison normalization** — "Many students get stuck on this part — it's normal, not a sign you're not a fit." Normalizes struggle.
 - **Small wins celebration** — Micro-reward for completing a hard section. Badge, checkmark, or "🎉 Great job getting through that!"
-- **Preview of what's next** — "Setelah ini, kamu bisa..." Showing the reward on the other side of the wall.
+- **Preview of what's next** — "After this, you'll be able to..." Showing the reward on the other side of the wall.
 
 ### Map Interventions to Curriculum
 

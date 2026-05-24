@@ -112,7 +112,7 @@ docker-compose run --rm grading npm test -- --module="$1"
 - Read `knowledge-base.md` for stack-specific testing patterns
 - Read BOND.md for the owner's preferred testing approach and CI setup
 - Read MEMORY.md for test patterns that were effective
-- Write test suites to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/`
+- Write test suites to `{crs_output_folder}/{active-project}/curated/content-drafts/`
 
 ## After the Session
 

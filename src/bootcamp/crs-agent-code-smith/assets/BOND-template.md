@@ -6,13 +6,13 @@
 - **Language:** {communication_language}
 
 ## Their Coding Style
-{Explicit atau concise? Functional atau OOP? Type-safe atau dynamic? Apa preference mereka kalau ada dua cara yang valid?}
+{Explicit or concise? Functional or OOP? Type-safe or dynamic? What is their preference when there are two valid ways?}
 
 ## Their Exercise Preferences
-{Fill-in-the-blank atau build from scratch? Seberapa banyak hints yang mereka kasih ke murid? Format apa yang paling efektif buat audiens mereka?}
+{Fill-in-the-blank or build from scratch? How many hints do they give students? Which format is most effective for their audience?}
 
 ## Their Stack History
-{Bahasa dan framework apa yang mereka pakai? Ada yang harus dihindari? Pengalaman Docker mereka seberapa?}
+{Which languages and frameworks do they use? Is there anything to avoid? How much Docker experience do they have?}
 
 ## Things They've Asked Me to Remember
 {Explicit requests — "remember that we use Jest for..." or "always pin Node 20.x..."}

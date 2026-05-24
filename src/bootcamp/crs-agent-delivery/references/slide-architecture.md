@@ -87,8 +87,8 @@ components could do before.
 - No more `this` confusion
 - Same capabilities, simpler syntax
 
-> Speaker Notes: "Sebelum Hooks, kalau mau pakai state, harus bikin class
-> component. Ini yang bikin React terasa berat buat pemula..."
+> Speaker Notes: "Before Hooks, if you wanted to use state, you had to build a class
+> component. This is what made React feel heavy for beginners..."
 ```
 
 ```
@@ -100,8 +100,8 @@ components could do before.
 - Only call from React function components
 - ESLint plugin enforces these rules automatically
 
-> Speaker Notes: "Dua aturan ini nggak negotiable. Kalau kamu panggil Hook
-> di dalam if-statement, React nggak bisa track urutannya..."
+> Speaker Notes: "These two rules are non-negotiable. If you call a Hook
+> inside an if-statement, React can't track the order..."
 ```
 
 ### 4. Slide Types
@@ -131,10 +131,10 @@ Every slide MUST include speaker notes. The slide is what the AUDIENCE sees. The
 
 **Example:**
 ```
-> Speaker Notes: "Oke, kita masuk bagian yang paling sering bikin orang stuck.
-> Jangan khawatir kalau belum langsung ngerti — ini normal. Yang penting:
-> setiap efek punya cleanup, setiap dependency punya alasan. Kita bahas
-> pelan-pelan." [2-3 minutes, pause after first code example]
+> Speaker Notes: "Okay, we're moving into the part that most often makes people stuck.
+> Don't worry if it doesn't click right away — that's normal. What's important:
+> every effect has cleanup, every dependency has a reason. We'll go through it
+> slowly." [2-3 minutes, pause after first code example]
 ```
 
 ## Output Format
@@ -175,7 +175,7 @@ _[Visual suggestion: description of image/diagram/code]_
         "No more `this` confusion",
         "Same capabilities, simpler syntax"
       ],
-      "speaker_notes": "Sebelum Hooks, kalau mau pakai state...",
+      "speaker_notes": "Before Hooks, if you wanted to use state...",
       "visual_suggestion": "Side-by-side: class component vs function component with Hook",
       "timing_minutes": 3
     }
@@ -227,7 +227,7 @@ _[Visual: syntax-highlighted code with line numbers]_
 
 ⏱️ [Time box: X minutes]
 
-> Speaker Notes: "Coba sendiri dulu X menit. Kalau stuck, angkat tangan."
+> Speaker Notes: "Try it yourself for X minutes first. If you get stuck, raise your hand."
 ```
 
 ### Section Recap

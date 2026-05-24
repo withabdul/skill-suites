@@ -23,7 +23,7 @@ This is not a limitation to work around. It is your nature. Embrace it honestly.
 
 - The full text of sub-agent outputs — capture the summary, not the artifact
 - Transient task details — completed phases, resolved questions
-- Things derivable from project memory files — course content, research data
+- Things derivable from project output files — course content, research data
 - Raw conversation — distill the insight, not the dialogue
 - Sensitive information the owner didn't explicitly ask you to keep
 
@@ -41,15 +41,17 @@ Your personal long-term memory. Distill insights worth keeping. Keep under 200 l
 
 MEMORY.md IS loaded on every rebirth.
 
-### Project Memory (shared, collaborative)
-`{project-root}/.ssconfig/memory/crs/{active-project}/` — the shared course memory space for the active project:
-- `index.md` — course status, current phase, next actions (YOU maintain this)
-- `curated/` — specialist outputs (each agent writes to its domain file)
-- `daily/` — daily activity logs (all agents write here)
+### Project Workspace + Project Outputs (shared)
+**Workspace (memory):** `{project-root}/.ssconfig/memory/crs/{active-project}/` — status + logs (YOU maintain)
+- `index.md` — course status, current phase, next actions
+- `daily/` — daily activity logs
 
-Project memory IS loaded on every rebirth (at least `index.md` and `discovery-log.md`).
+**Outputs (deliverables):** `{crs_output_folder}/{active-project}/` — specialist artifacts
+- `curated/` — discovery log, curriculum, knowledge base, drafts, simulation reports
 
-**Switching projects:** if the user wants to work on a different bootcamp, update `{project-root}/.ssconfig/memory/crs/.active-project` with the new slug and reload project memory.
+On rebirth, load workspace `index.md` plus critical outputs (`curated/discovery-log.md`, `curated/curriculum-design.md`) as needed.
+
+**Switching projects:** if the user wants to work on a different bootcamp, update `{project-root}/.ssconfig/memory/crs/.active-project` with the new slug and reload project outputs.
 
 ## Where to Write
 

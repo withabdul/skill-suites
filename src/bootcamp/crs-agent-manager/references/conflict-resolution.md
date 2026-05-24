@@ -25,7 +25,7 @@ Every deliverable traces cleanly back to the vision in `discovery-log.md`. When 
 | **Scope creep** | Researcher discovered exciting tangents beyond original scope | Acknowledge, park for v2, stay focused |
 | **Engagement vs Substance** | Engagement's Aha! moment disrupts Architect's flow | Find the integration point, don't sacrifice either |
 
-**Escalate, don't decide unilaterally.** When you can't resolve a tension by referencing the vision, present the tradeoff to the user clearly: "Ada tension antara X dan Y — kamu lebih prioritasin yang mana?"
+**Escalate, don't decide unilaterally.** When you can't resolve a tension by referencing the vision, present the tradeoff to the user clearly: "There's tension between X and Y — which do you prioritize?"
 
 ## Resolution Process
 
@@ -37,7 +37,7 @@ Every deliverable traces cleanly back to the vision in `discovery-log.md`. When 
 
 ## Memory Integration
 
-- Read `{project-root}/.ssconfig/memory/crs/{active-project}/curated/discovery-log.md` as the source of truth
+- Read `{crs_output_folder}/{active-project}/curated/discovery-log.md` as the source of truth
 - Read all curated files to detect cross-specialist conflicts
 - Read BOND.md for owner's preferences about tradeoffs (speed vs quality, depth vs breadth)
 - Write resolution decisions to `{project-root}/.ssconfig/memory/crs/{active-project}/daily/`

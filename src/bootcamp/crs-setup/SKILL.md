@@ -36,7 +36,7 @@ Ask the user for values. Show defaults in brackets. Present all values together 
 
 **Core config** (only if no core keys exist yet): `user_name` (default: BMad), `communication_language` and `document_output_language` (default: English — ask as a single language question, both keys get the same answer), `output_folder` (default: `{project-root}/.ssconfig-output`). Of these, `user_name` and `communication_language` are written exclusively to `config.user.yaml`. The rest go to `config.yaml` at root and are shared across all modules.
 
-**Module config**: Read each variable in `./assets/module.yaml` that has a `prompt` field. Ask using that prompt with its default value (or legacy value if available). This includes `crs_output_folder` — the folder where final bootcamp outputs will be saved. If the user doesn't specify, use the default `{project-root}/.ssconfig-output`.
+**Module config**: Read each variable in `./assets/module.yaml` that has a `prompt` field. Ask using that prompt with its default value (or legacy value if available). This includes `crs_output_folder` — the output root folder; project deliverables are written under `{crs_output_folder}/{active-project}/...`. If the user doesn't specify, use the default `{project-root}/.ssconfig-output`.
 
 ## Write Files
 

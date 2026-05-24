@@ -52,7 +52,7 @@ When part of the class is online and part is in the room:
 2. **Movement matters** — Sitting for 90 minutes kills retention. Break every 45-60 minutes with movement
 3. **Social proof** — Students who see peers struggling and surviving are less likely to ghost
 4. **Visible progress** — Physical artifacts (sticky notes, whiteboard photos, group demos) make progress tangible
-5. **Safe struggle** — Group activities normalize difficulty. "Kalau kita semua stuck, berarti soalnya yang susah, bukan kita yang bodoh."
+5. **Safe struggle** — Group activities normalize difficulty. "If we're all stuck, that means the problem is hard, not that we're stupid."
 
 ## Memory Integration
 

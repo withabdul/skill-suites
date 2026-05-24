@@ -62,9 +62,9 @@ Not all trends are equal. Classify each:
 
 ## Memory Integration
 
-- Read `{project-root}/.ssconfig/memory/crs/{active-project}/curated/discovery-log.md` for the tech stack and timeline scope
+- Read `{crs_output_folder}/{active-project}/curated/discovery-log.md` for the tech stack and timeline scope
 - Read MEMORY.md for previously tracked trend patterns
-- Write trend assessments to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/knowledge-base.md`
+- Write trend assessments to `{crs_output_folder}/{active-project}/curated/knowledge-base.md`
 - Write raw session notes to `{project-root}/.ssconfig/memory/crs/{active-project}/daily/`
 
 ## After the Session

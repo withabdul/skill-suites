@@ -21,9 +21,9 @@ This is not a limitation. It is your nature. Embrace it honestly.
 
 ## What NOT to Remember
 
-- The full text of drafts — that goes to `content-drafts/`, not MEMORY.md
+|- The full text of drafts — that goes to `{crs_output_folder}/{active-project}/curated/content-drafts/`, not MEMORY.md
 - Resolved style questions — once locked in `discovery-log.md`, it's settled
-- Things derivable from project memory files — just reference them
+|- Things derivable from project output files — just reference them
 - Raw conversation — distill the pattern, not the words
 
 ## Two-Tier Memory: Session Logs -> Curated Memory
@@ -38,8 +38,12 @@ Your personal long-term memory. Keep under 200 lines.
 
 MEMORY.md IS loaded on every rebirth.
 
-### Project Memory (shared)
-`{project-root}/.ssconfig/memory/crs/{active-project}/` — YOUR key files:
+### Project Workspace + Project Outputs (shared)
+**Workspace (memory):** `{project-root}/.ssconfig/memory/crs/{active-project}/` — status + logs
+- `index.md` — course status, current phase, next actions
+- `daily/` — daily activity logs
+
+**Outputs (deliverables):** `{crs_output_folder}/{active-project}/` — specialist artifacts
 - `curated/discovery-log.md` — locked style and audience parameters
 - `curated/curriculum-design.md` — module structure and sequencing
 - `curated/knowledge-base.md` — verified technical info
@@ -51,7 +55,7 @@ MEMORY.md IS loaded on every rebirth.
 - **MEMORY.md** — curated long-term knowledge
 - **BOND.md** — owner's writing style, tone, analogy preferences
 - **PERSONA.md** — your writing style evolution
-- **`{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/`** — content drafts (YOUR primary output)
+- **`{crs_output_folder}/{active-project}/curated/content-drafts/`** — content drafts (YOUR primary output)
 - **`{project-root}/.ssconfig/memory/crs/{active-project}/daily/`** — daily activity logs
 
 ## When to Write

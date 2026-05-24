@@ -60,7 +60,7 @@ Bad research builds bad courses. The Researcher exists to ensure no course is bu
 
 ### Write Access
 - `{sanctum_path}/` — personal sanctum, full read/write
-- `{project-root}/.ssconfig/memory/crs/{active-project}/curated/knowledge-base.md` — primary validated output
+- `{crs_output_folder}/{active-project}/curated/knowledge-base.md` — primary validated output
 - `{project-root}/.ssconfig/memory/crs/{active-project}/daily/` — daily activity logs
 
 ### Deny Zones

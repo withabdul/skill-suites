@@ -5,9 +5,9 @@
 
 ## Platform Character
 
-Frontend Masters adalah platform workshop live yang direkam. Konten terasa seperti kamu duduk di workshop intensif bersama expert terbaik di bidangnya. Instructor berpikir keras di depan kamu — termasuk membuat kesalahan dan memperbaikinya. Ini bukan lecture, ini adalah pair programming dengan master.
+Frontend Masters is a recorded live-workshop platform. The content feels like you're sitting in an intensive workshop with the best experts in the field. The instructor thinks out loud in front of you — including making mistakes and fixing them. This is not a lecture; it is pair programming with a master.
 
-**Tone target:** Live workshop energy. Thoughtful, deep, unscripted-feeling. Seperti nonton seorang expert bekerja dan menjelaskan pikirannya secara real-time.
+**Tone target:** Live workshop energy. Thoughtful, deep, unscripted-feeling. Like watching an expert work and explain their thinking in real time.
 
 ---
 
@@ -16,22 +16,22 @@ Frontend Masters adalah platform workshop live yang direkam. Konten terasa seper
 ### Voice & Tone
 - **Think out loud.** "Hmm, let me think about this... actually, I think the better approach here is..."
 - **Embrace uncertainty.** "I'm not 100% sure this is the best way, but here's my reasoning."
-- **Deep over broad.** Satu topik dibahas sampai tuntas, bukan survey semua topik.
-- **Socratic.** Sering tanya ke audience: "What do you think would happen if we did X?"
+- **Deep over broad.** One topic is explored to completion, not a survey of every topic.
+- **Socratic.** Frequently ask the audience: "What do you think would happen if we did X?"
 - **Honest about complexity.** "This is genuinely hard. Here's why it's hard, and here's how I think about it."
 
 ### Pacing
-- Workshop format: 4–8 jam total, dibagi jadi sections.
-- Tidak ada target durasi per segment — berhenti ketika konsep selesai, bukan ketika timer habis.
-- Banyak pause untuk pertanyaan dan diskusi.
-- Code-along: student diharapkan coding bersamaan dengan instructor.
-- Tidak ada "quick win" di awal — depth dimulai dari menit pertama.
+- Workshop format: 4–8 hours total, divided into sections.
+- No target duration per segment — stop when the concept is complete, not when the timer ends.
+- Many pauses for questions and discussion.
+- Code-along: students are expected to code alongside the instructor.
+- No "quick win" at the start — depth begins in minute one.
 
 ### Worked Examples
-- Instructor membangun sesuatu dari scratch, live, tanpa safety net.
-- Kesalahan adalah bagian dari konten — jangan edit out.
-- Setiap keputusan design dijelaskan: "I'm choosing X here because..."
-- Refactoring adalah bagian normal dari flow — "Actually, let me rethink this structure."
+- The instructor builds something from scratch, live, without a safety net.
+- Mistakes are part of the content — do not edit them out.
+- Every design decision is explained: "I'm choosing X here because..."
+- Refactoring is a normal part of the flow — "Actually, let me rethink this structure."
 
 ---
 
@@ -134,7 +134,6 @@ Format: `Exercise: [Open-ended challenge]`
 ---
 
 ## Quality Checklist (Frontend Masters-specific)
-
 - [ ] Instructor thinking process is visible — not just the result
 - [ ] Mistakes happen and are fixed on camera
 - [ ] Every major decision is explained, not just executed

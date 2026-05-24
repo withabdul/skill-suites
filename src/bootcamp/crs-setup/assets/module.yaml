@@ -11,7 +11,7 @@ module_greeting: >
   For questions, suggestions and support — reach out to the module author.
 
 crs_output_folder:
-  prompt: "Where is the final bootcamp output stored? (example: /home/user/projects/bootcamp-output)"
+  prompt: "Where is the bootcamp output root folder stored? (Outputs will be written under: {crs_output_folder}/{active-project}/...)"
   default: "{project-root}/.ssconfig-output"
   result: "{value}"
   user_setting: false

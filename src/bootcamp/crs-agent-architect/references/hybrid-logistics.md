@@ -70,10 +70,10 @@ When documenting a hybrid curriculum, tag each session clearly:
 
 ## Memory Integration
 
-- Read `{project-root}/.ssconfig/memory/crs/{active-project}/curated/discovery-log.md` for format decisions (online/offline/hybrid) and audience context
-- Read `{project-root}/.ssconfig/memory/crs/{active-project}/curated/knowledge-base.md` for content that needs format-specific adaptation
+- Read `{crs_output_folder}/{active-project}/curated/discovery-log.md` for format decisions (online/offline/hybrid) and audience context
+- Read `{crs_output_folder}/{active-project}/curated/knowledge-base.md` for content that needs format-specific adaptation
 - Cross-reference with `DYNAMIC_TIMELINE` and `PREREQUISITE_MAPPING` outputs — format adjustments must not break the prerequisite chain
-- Write format-adjusted curriculum to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/curriculum-design.md`
+- Write format-adjusted curriculum to `{crs_output_folder}/{active-project}/curated/curriculum-design.md`
 
 ## After the Session
 

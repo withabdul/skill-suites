@@ -5,31 +5,31 @@
 
 ## Platform Character
 
-Coursera adalah academic-adjacent platform. Konten sering dibuat bersama universitas atau institusi. Student datang untuk credential yang diakui, bukan hanya skill. Struktur dan rigor lebih penting dari personality.
+Coursera is an academic-adjacent platform. Content is often created with universities or institutions. Students come for recognized credentials, not just skills. Structure and rigor matter more than personality.
 
-**Tone target:** Authoritative tapi accessible. Seperti dosen yang baik — terstruktur, jelas, tapi tidak kaku.
+**Tone target:** Authoritative but accessible. Like a good professor — structured, clear, but not stiff.
 
 ---
 
 ## Treatment
 
 ### Voice & Tone
-- **Third-person aware, second-person delivery.** "In this course, you will..." bukan "I'll show you..."
-- **Structured.** Setiap pernyataan punya konteks. Tidak ada asumsi implisit.
-- **Precise.** Gunakan terminologi yang tepat. Define terms sebelum digunakan.
-- **Measured pacing.** Tidak terburu-buru. Beri ruang untuk konsep meresap.
-- **Evidence-based.** Kalau ada claim, ada justifikasi. "Research shows..." atau "In practice, this means..."
+- **Third-person aware, second-person delivery.** "In this course, you will..." not "I'll show you..."
+- **Structured.** Every statement has context. No implicit assumptions.
+- **Precise.** Use the correct terminology. Define terms before use.
+- **Measured pacing.** Not rushed. Give concepts room to settle.
+- **Evidence-based.** If there is a claim, there is justification. "Research shows..." or "In practice, this means..."
 
 ### Pacing
-- Video 6–12 menit per clip. Lebih terstruktur dari Udemy.
-- Setiap minggu = satu tema besar dengan 3–5 video + reading + quiz.
-- Graded assignment wajib ada di akhir setiap minggu.
-- Discussion prompt di setiap modul untuk peer interaction.
+- Video 6–12 minutes per clip. More structured than Udemy.
+- Each week = one big theme with 3–5 videos + reading + quiz.
+- A graded assignment is required at the end of every week.
+- A discussion prompt in each module for peer interaction.
 
 ### Worked Examples
-- Lebih banyak annotated code dan diagrams dibanding live coding.
-- Setiap konsep punya "real-world application" section — di mana ini dipakai di industri.
-- Case studies dari perusahaan nyata lebih efektif dari contoh abstrak.
+- More annotated code and diagrams than live coding.
+- Each concept has a "real-world application" section — where this is used in industry.
+- Case studies from real companies are more effective than abstract examples.
 
 ---
 
@@ -159,7 +159,6 @@ Format: `[Week N] Assignment: [Specific Task]`
 ---
 
 ## Quality Checklist (Coursera-specific)
-
 - [ ] Every video states learning objective in first 30 seconds
 - [ ] All technical terms defined before use
 - [ ] Real-world application included in every module

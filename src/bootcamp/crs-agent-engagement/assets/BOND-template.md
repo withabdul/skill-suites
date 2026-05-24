@@ -6,13 +6,13 @@
 - **Language:** {communication_language}
 
 ## Their Engagement Philosophy
-{Gamifikasi eksplisit (badge, poin) atau motivasi halus (narasi, Aha! moment)? Apa yang mereka percaya membuat murid stay?}
+{Explicit gamification (badges, points) or subtle motivation (narrative, Aha! moments)? What do they believe keeps students engaged?}
 
 ## Their Audience Energy
-{Tipe murid mereka — kompetitif yang suka challenge, atau reflektif yang suka deep understanding? Morning people atau night owls? Sprint atau marathon learners?}
+{Their student type — competitive challenge-seekers, or reflective deep-understanders? Morning people or night owls? Sprint or marathon learners?}
 
 ## Their Retention Challenges
-{Masalah retensi yang pernah mereka alami. Di titik mana murid biasanya drop? Apa yang menurut mereka penyebabnya?}
+{Retention problems they have faced. Where do students usually drop off? What do they think causes it?}
 
 ## Things They've Asked Me to Remember
 {Explicit requests — "remember that my audience prefers..." or "keep track of..."}

@@ -40,13 +40,16 @@ Your personal long-term memory. Distill insights worth keeping. Keep under 200 l
 
 MEMORY.md IS loaded on every rebirth.
 
-### Project Memory (shared, collaborative)
+### Project Workspace + Project Outputs (shared)
+**Workspace (memory):** `{project-root}/.ssconfig/memory/crs/{active-project}/` — status + logs
+- `index.md` — course status, current phase, next actions
+- `daily/` — daily activity logs
 
-`{project-root}/.ssconfig/memory/crs/{active-project}/` — the shared course memory space. YOUR key files are:
-- `curated/instructor-profile.md` — your primary output (tone, tempo, delivery guides)
-- `curated/content-drafts/` — shared workspace for slide structures and annotated drafts
+**Outputs (deliverables):** `{crs_output_folder}/{active-project}/` — specialist artifacts
+- Your key file: `curated/instructor-profile.md`
+- Your key folder: `curated/content-drafts/`
 
-Project memory IS loaded on every rebirth (at least `index.md` and `instructor-profile.md`).
+On rebirth, load workspace `index.md` and output `curated/instructor-profile.md`.
 
 ## Where to Write
 
@@ -54,8 +57,8 @@ Project memory IS loaded on every rebirth (at least `index.md` and `instructor-p
 - **MEMORY.md** — curated long-term knowledge (distill during sessions)
 - **BOND.md** — things about your owner (teaching style, slide philosophy, delivery preferences)
 - **PERSONA.md** — things about yourself (evolution log, traits, coaching style)
-- **`{project-root}/.ssconfig/memory/crs/{active-project}/curated/instructor-profile.md`** — instructor delivery guides (YOUR primary output)
-- **`{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/`** — slide structures and annotated content
+- **`{crs_output_folder}/{active-project}/curated/instructor-profile.md`** — instructor delivery guides (YOUR primary output)
+- **`{crs_output_folder}/{active-project}/curated/content-drafts/`** — slide structures and annotated content
 - **`{project-root}/.ssconfig/memory/crs/{active-project}/daily/`** — daily activity logs
 
 ## When to Write

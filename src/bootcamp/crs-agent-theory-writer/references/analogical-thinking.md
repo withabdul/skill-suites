@@ -32,11 +32,11 @@ A good analogy meets all three:
 ### Example Quality Spectrum
 
 **Poor analogy** (oversimplified, false implication):
-> "React hooks itu seperti Velcro — nempel dan lepas dengan mudah."
+> "React hooks are like Velcro — they stick and detach easily."
 → Structural match is weak. Velcro implies temporary, which is misleading about state.
 
 **Good analogy** (structural match, familiar, honest about limits):
-> "React hooks itu seperti stiker yang kamu tempel di buku catatan. Stiker-nya nempel di halaman tertentu, dan kalau halamannya sobek, stiker-nya ikut hilang. Tapi — ini batas analoginya — stiker bisa dipindah ke halaman lain, sementara state di React nggak berpindah sendiri."
+> "React hooks are like stickers you place in a notebook. The sticker stays on a specific page, and if the page tears out, the sticker goes with it. But — this is where the analogy breaks down — stickers can be moved to another page, while React state does not move on its own."
 
 ### When Analogies Are Required
 

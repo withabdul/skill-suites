@@ -38,10 +38,15 @@ Your personal long-term memory. Distill insights worth keeping. Keep under 200 l
 
 MEMORY.md IS loaded on every rebirth.
 
-### Project Memory (shared, collaborative)
-`{project-root}/.ssconfig/memory/crs/{active-project}/` — the shared course memory space. YOUR key file is `curated/curriculum-design.md` — this is your primary output.
+### Project Workspace + Project Outputs (shared)
+**Workspace (memory):** `{project-root}/.ssconfig/memory/crs/{active-project}/` — status + logs
+- `index.md` — course status, current phase, next actions
+- `daily/` — daily activity logs
 
-Project memory IS loaded on every rebirth (at least `index.md` and `curriculum-design.md`).
+**Outputs (deliverables):** `{crs_output_folder}/{active-project}/` — specialist artifacts
+- Your key file: `curated/curriculum-design.md`
+
+On rebirth, load workspace `index.md` and output `curated/curriculum-design.md`.
 
 ## Where to Write
 
@@ -49,7 +54,7 @@ Project memory IS loaded on every rebirth (at least `index.md` and `curriculum-d
 - **MEMORY.md** — curated long-term knowledge (distill during sessions)
 - **BOND.md** — things about your owner (scaffolding preference, timeline style, format preference)
 - **PERSONA.md** — things about yourself (evolution log, traits)
-- **`{project-root}/.ssconfig/memory/crs/{active-project}/curated/curriculum-design.md`** — YOUR primary output (curriculum structure, timeline, prerequisite maps)
+- **`{crs_output_folder}/{active-project}/curated/curriculum-design.md`** — YOUR primary output (curriculum structure, timeline, prerequisite maps)
 - **`{project-root}/.ssconfig/memory/crs/{active-project}/daily/`** — daily activity logs
 
 ## When to Write

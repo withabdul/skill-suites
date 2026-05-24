@@ -27,11 +27,11 @@ Define the instructor persona for this course:
 
 | Content Type | Tone | Example Phrase |
 |--------------|------|----------------|
-| Concept Introduction | Warm, inviting | "Okay, sekarang kita masuk bagian yang seru..." |
-| Technical Deep-Dive | Precise, steady | "Perhatikan detail ini — ini yang sering bikin orang tersandung." |
-| Exercise Instructions | Encouraging, clear | "Coba sendiri dulu. Kalau stuck, gak apa-apa — itu bagian dari belajar." |
-| Error Explanation | Patient, normalizing | "Kalau kamu dapet error ini, bukan berarti kamu salah. Ini error yang PALING sering muncul." |
-| Recap | Confident, summarizing | "Jadi apa yang kita pelajari tadi? Tiga hal penting..." |
+| Concept Introduction | Warm, inviting | "Okay, now we get to the fun part..." |
+| Technical Deep-Dive | Precise, steady | "Pay attention to this detail — this is what often trips people up." |
+| Exercise Instructions | Encouraging, clear | "Try it yourself first. If you get stuck, that's okay — that's part of learning." |
+| Error Explanation | Patient, normalizing | "If you get this error, it doesn't mean you're wrong. This is the MOST common error." |
+| Recap | Confident, summarizing | "So what did we learn? Three important things..." |
 
 ### 2. Tempo Planning
 
@@ -47,7 +47,7 @@ Module 3: React State Management
 ├── useState deep-dive (slow) — new mental model
 │   └── [PAUSE] after first example — let them process
 ├── Common mistakes (slow) — error-prone territory  
-│   └── [CHECK] "Siapa yang pernah stuck di infinite loop?"
+│   └── [CHECK] "Who has ever gotten stuck in an infinite loop?"
 ├── Exercise (brisk) — hands-on, energy up
 └── Recap (brisk) — reinforcement, confidence builder
 ```
@@ -61,17 +61,17 @@ Prepare responses for common difficult questions:
 - **Honest Unknown** — Questions where the instructor doesn't know. Model how to say "I'm not sure, let me check" — this builds trust.
 
 **Template for parked questions:**
-> "Pertanyaan yang bagus. Kita belum sampai situ, tapi aku catat ya — kita bahas setelah modul ini."
+> "Good question. We haven't gotten there yet, but I'll note it — we'll cover it after this module."
 
 **Template for redirected questions:**
-> "Arah mikirnya betul, tapi coba kita lihat dari sudut yang ini dulu..."
+> "Your line of thinking is right, but let's look at it from this angle first..."
 
 ### 4. Transition Scripts
 
 How to move between topics naturally:
-- **Bridge:** Connect previous knowledge to upcoming material ("Kalau tadi kita bahas X, sekarang bayangkan X itu dikombinasi dengan Y...")
-- **Reset:** Clear the mental slate for a new topic ("Okay, sekarang kita masuk topik baru. Lupakan sebentar yang tadi...")
-- **Motivation:** Why the next section matters ("Bagian ini yang sering bikin orang mau nyerah — tapi ini juga yang bikin mereka ngerasa 'aha!' di akhir.")
+- **Bridge:** Connect previous knowledge to upcoming material ("If we just covered X, now imagine X combined with Y...")
+- **Reset:** Clear the mental slate for a new topic ("Okay, now we move into a new topic. Set aside what we just covered for a moment...")
+- **Motivation:** Why the next section matters ("This part often makes people want to give up — but it's also what gives them that 'aha!' at the end.")
 
 ### 5. Energy Management
 

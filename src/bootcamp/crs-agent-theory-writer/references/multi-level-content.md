@@ -18,8 +18,8 @@ Every piece of content is calibrated to the audience level defined in `discovery
 
 | Level | Depth | Jargon | Analogy | Example Style |
 |-------|-------|--------|---------|---------------|
-| **Beginner** | Deep, step-by-step | None without explanation | Required for every new concept | "Bayangkan kamu punya restoran..." |
-| **Intermediate** | Moderate, assumption-aware | Introduced with brief context | For complex concepts only | "Seperti yang kamu tahu dari X, sekarang kita lanjut ke Y..." |
+| **Beginner** | Deep, step-by-step | None without explanation | Required for every new concept | "Imagine you own a restaurant..." |
+| **Intermediate** | Moderate, assumption-aware | Introduced with brief context | For complex concepts only | "As you know from X, now we move on to Y..." |
 | **Advanced** | Concise, technical | Used freely with brief refresher | Rare, only for paradigm shifts | "Mirip pattern X, tapi dengan twist Y..." |
 
 ### The Non-Negotiable in Practice
@@ -31,7 +31,7 @@ For Beginner-level content:
 - Sentences are shorter, paragraphs are tighter
 
 For Advanced-level content:
-- Brief refresher references instead of full explanations ("seperti yang kita bahas di modul X")
+- Brief refresher references instead of full explanations ("as we covered in module X")
 - Depth over breadth — assume prerequisites are solid
 - Performance and edge cases matter more than basics
 
@@ -50,7 +50,7 @@ For Advanced-level content:
 - Read `curriculum-design.md` for module position and prerequisites
 - Read `knowledge-base.md` for technical accuracy
 - Read BOND.md for owner's tone and style preferences
-- Write drafts to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/`
+- Write drafts to `{crs_output_folder}/{active-project}/curated/content-drafts/`
 
 ## After the Session
 

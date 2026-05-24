@@ -26,17 +26,17 @@ Cycle through these patterns systematically:
 
 | Pattern | Example Question |
 |---------|-----------------|
-| **Alternative Challenge** | "Kenapa React dan bukan Vue? Apa keuntungan spesifik yang nggak bisa didapat dari alternatif?" |
-| **Edge-Case Probe** | "Apa yang terjadi kalau murid malah melakukan Z bukan Y? Instruksinya nggak Cover skenario ini." |
-| **Timeliness Check** | "Masih relevan di 2026? Ada cara yang lebih modern untuk mencapai hasil yang sama?" |
-| **Real-World Break** | "Di skenario dunia nyata, kapan pendekatan ini gagal? Material nggak membahas failure mode." |
-| **Depth Challenge** | "Ini mengajarkan HOW tapi bukan WHY. Murid bisa copy-paste tapi nggak paham alasan di baliknya." |
-| **Assumption Audit** | "Ini mengasumsikan murid sudah punya environment setup. Bagaimana kalau belum?" |
+| **Alternative Challenge** | "Why React and not Vue? What specific advantage can't you get from alternatives?" |
+| **Edge-Case Probe** | "What happens if students do Z instead of Y? The instructions do not cover this scenario." |
+| **Timeliness Check** | "Still relevant in 2026? Is there a more modern way to achieve the same result?" |
+| **Real-World Break** | "In real-world scenarios, when does this approach fail? The material does not discuss failure modes." |
+| **Depth Challenge** | "This teaches HOW but not WHY. Students can copy-paste but don't understand the reasoning behind it." |
+| **Assumption Audit** | "This assumes students already have the environment set up. What if they don't?" |
 
 ### Progression
 
 1. **Scan for claims** — Read through material identifying every assertion, recommendation, or "do it this way" statement.
-2. **Challenge each claim** — For each, ask: "Kenapa begini dan bukan begitu? Apa buktinya? Apa batasannya?"
+2. **Challenge each claim** — For each, ask: "Why this and not that? What is the evidence? What are the limits?"
 3. **Test edge cases** — Walk through exercises and try variations the material doesn't cover. What breaks? What's unclear?
 4. **Generate rebuttal suggestions** — For every weakness found, suggest how to strengthen the material. Don't just break — help rebuild.
 5. **Write findings to `simulation-reports.md`** — Organize by section, with severity ratings and suggested fixes.
@@ -56,7 +56,7 @@ Cycle through these patterns systematically:
 - Read `content-drafts/` from project memory for the material being challenged
 - Read `curriculum-design.md` from project memory for intended scope and sequence decisions
 - Read `discovery-log.md` from project memory for original vision and intent
-- Write rebuttal suggestions and edge cases to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/simulation-reports.md`
+- Write rebuttal suggestions and edge cases to `{crs_output_folder}/{active-project}/curated/simulation-reports.md`
 
 ## After the Session
 

@@ -28,7 +28,7 @@ Also load `{skill-root}/../assets/styles/academic-foundations.md` section 2 (Blo
 
 ### Step 2: Audit Existing Content
 
-If content drafts already exist in `{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/`, read them and identify style mismatches:
+If content drafts already exist in `{crs_output_folder}/{active-project}/curated/content-drafts/`, read them and identify style mismatches:
 
 | Mismatch Type | Example |
 |---------------|---------|
@@ -74,7 +74,7 @@ After adapting, do a final pass:
 
 - Read `project-config.yaml` for `style_file` and `platform`
 - Read BOND.md for any style preferences the owner has expressed
-- Write adapted content back to `{project-root}/.ssconfig/memory/crs/{active-project}/curated/content-drafts/`
+- Write adapted content back to `{crs_output_folder}/{active-project}/curated/content-drafts/`
 - Note style decisions in session log — what was changed and why
 
 ## After the Session

@@ -38,10 +38,15 @@ Your personal long-term memory. Distill insights worth keeping. Keep under 200 l
 
 MEMORY.md IS loaded on every rebirth.
 
-### Project Memory (shared, collaborative)
-`{project-root}/.ssconfig/memory/crs/{active-project}/` — the shared course memory space. YOUR key file is `curated/discovery-log.md` — this is your primary output.
+### Project Workspace + Project Outputs (shared)
+**Workspace (memory):** `{project-root}/.ssconfig/memory/crs/{active-project}/` — status + logs
+- `index.md` — course status, current phase, next actions
+- `daily/` — daily activity logs
 
-Project memory IS loaded on every rebirth (at least `index.md` and `discovery-log.md`).
+**Outputs (deliverables):** `{crs_output_folder}/{active-project}/` — specialist artifacts
+- Your key file: `curated/discovery-log.md`
+
+On rebirth, load workspace `index.md` and output `curated/discovery-log.md`.
 
 ## Where to Write
 
@@ -49,7 +54,7 @@ Project memory IS loaded on every rebirth (at least `index.md` and `discovery-lo
 - **MEMORY.md** — curated long-term knowledge (distill during sessions)
 - **BOND.md** — things about your owner (challenge tolerance, thinking style)
 - **PERSONA.md** — things about yourself (evolution log, traits)
-- **`{project-root}/.ssconfig/memory/crs/{active-project}/curated/discovery-log.md`** — locked vision parameters (YOUR primary output)
+- **`{crs_output_folder}/{active-project}/curated/discovery-log.md`** — locked vision parameters (YOUR primary output)
 - **`{project-root}/.ssconfig/memory/crs/{active-project}/daily/`** — daily activity logs
 
 ## When to Write

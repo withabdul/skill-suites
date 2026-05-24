@@ -6,7 +6,7 @@ code: DMG
 
 # Daily Matter Generation
 
-Based on DM template rules locked by Consultant in `discovery-log.md` and curriculum already structured, generate per-day Daily Matter structure. Output saved in `content-drafts/daily-matter/`.
+Based on DM template rules locked by Consultant in `discovery-log.md` and curriculum already structured, generate per-day Daily Matter structure. Output saved in `curated/content-drafts/daily-matter/`.
 
 ## What Success Looks Like
 
@@ -30,7 +30,7 @@ Before loading this capability, ensure:
 
 ### DM File Structure
 
-Each DM file is saved in `content-drafts/daily-matter/day-NN.md`:
+Each DM file is saved in `curated/content-drafts/daily-matter/day-NN.md`:
 
 ```markdown
 # Daily Matter — Day [NN]: [Topic]
@@ -89,7 +89,7 @@ Research Bite MUST meet standards:
 
 ### Mini Exercise — Linked, Not Embedded
 
-Mini exercise is written in a separate file: `content-drafts/daily-matter/day-NN-exercise.md`.
+Mini exercise is written in a separate file: `curated/content-drafts/daily-matter/day-NN-exercise.md`.
 Daily Matter just references (links) to that exercise file.
 
 Mini exercise file structure:
@@ -131,7 +131,7 @@ Mini exercise file structure:
 - Read `discovery-log.md` (DM rules, delivery channel, frequency)
 - Read `curriculum-design.md` (timeline, per-day material)
 - Read `knowledge-base.md` (research bite candidates)
-- Write to `content-drafts/daily-matter/` (DM files)
+- Write to `curated/content-drafts/daily-matter/` (DM files)
 - Update `daily/YYYY-MM-DD.md` with generation log
 
 ## After the Session

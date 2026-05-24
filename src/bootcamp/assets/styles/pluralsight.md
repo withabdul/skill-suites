@@ -5,32 +5,32 @@
 
 ## Platform Character
 
-Pluralsight adalah platform untuk professional developers. Tidak ada pemula di sini — student sudah punya baseline knowledge dan datang untuk naik level. Konten harus expert-to-expert: padat, presisi, tanpa basa-basi.
+Pluralsight is a platform for professional developers. There are no beginners here — students already have baseline knowledge and come to level up. Content must be expert-to-expert: dense, precise, no nonsense.
 
-**Tone target:** Precise, technical, confident. Seperti senior engineer yang briefing tim — tidak ada waktu untuk fluff, setiap kata harus earn its place.
+**Tone target:** Precise, technical, confident. Like a senior engineer briefing a team — no time for fluff, every word must earn its place.
 
 ---
 
 ## Treatment
 
 ### Voice & Tone
-- **Expert-to-expert.** Tidak perlu explain basics. "As you know, REST is stateless — here's why that matters for our caching strategy."
-- **Dense tapi tidak arrogant.** Padat informasi, tapi tidak menghina yang belum tahu.
-- **No filler.** Tidak ada "great question!", tidak ada "so basically...", tidak ada recap yang tidak perlu.
-- **Opinionated dengan justifikasi.** "I recommend X over Y because in production, Y causes Z."
-- **Benchmark-driven.** Kalau ada angka, pakai angka. "This reduces latency by ~40% in our benchmarks."
+- **Expert-to-expert.** No need to explain basics. "As you know, REST is stateless — here's why that matters for our caching strategy."
+- **Dense but not arrogant.** Information-rich, but not insulting to those who do not know.
+- **No filler.** No "great question!", no "so basically...", no unnecessary recap.
+- **Opinionated with justification.** "I recommend X over Y because in production, Y causes Z."
+- **Benchmark-driven.** If there are numbers, use numbers. "This reduces latency by ~40% in our benchmarks."
 
 ### Pacing
-- Clips sangat pendek: 2–5 menit per clip. Ini bukan typo.
-- Module = kumpulan clips dengan satu tema (15–30 menit total).
-- Tidak ada filler intro. Langsung ke inti dalam 15 detik pertama.
-- Skill IQ assessment sebelum dan sesudah course — student harus bisa ukur progress.
+- Clips are very short: 2–5 minutes per clip. This is not a typo.
+- Module = a collection of clips with one theme (15–30 minutes total).
+- No filler intro. Get to the point within the first 15 seconds.
+- Skill IQ assessment before and after the course — students should be able to measure progress.
 
 ### Worked Examples
-- Code harus production-quality. Tidak ada toy examples.
-- Selalu tunjukkan konteks nyata: "This is how we'd do this at scale."
-- Bandingkan pendekatan: "Approach A vs B — here's the trade-off."
-- Demo tools dan workflow yang dipakai di industri nyata.
+- Code must be production-quality. No toy examples.
+- Always show real context: "This is how we'd do this at scale."
+- Compare approaches: "Approach A vs B — here's the trade-off."
+- Demo tools and workflows used in real industry settings.
 
 ---
 
@@ -113,7 +113,6 @@ Format: `[Specific action or concept]`
 ---
 
 ## Quality Checklist (Pluralsight-specific)
-
 - [ ] No clip exceeds 5 minutes
 - [ ] No filler phrases ("great", "basically", "so...")
 - [ ] Every code example is production-quality
